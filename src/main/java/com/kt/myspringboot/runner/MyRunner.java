@@ -24,6 +24,7 @@ public class MyRunner implements ApplicationRunner {
         System.out.println("myboot.name 환경변수 = " + name);
         System.out.println("myboot.age 환경변수 = " + age);
         System.out.println("myboot.fullName 환경변수 " + environment.getProperty("myboot.fullName"));
+        System.out.println("port 번호 " + environment.getProperty("local.server.port"));
 
         System.out.println("VM Argument : " + args.containsOption("foo"));
         System.out.println("Program Argument : " + args.containsOption("bar"));
