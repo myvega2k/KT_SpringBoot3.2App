@@ -2,6 +2,8 @@ package com.kt.myspringboot.runner;
 
 import com.kt.myspringboot.dto.AccountDTO;
 import com.kt.myspringboot.property.MybootProperties;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;
@@ -27,8 +29,10 @@ public class MyRunner implements ApplicationRunner {
 
     @Autowired
     private AccountDTO account;
+    private Logger logger = LoggerFactory.getLogger(MyRunner.class);
 
     public void run(ApplicationArguments args) throws Exception {
+        System.out.println("Logger 구현 클래스 이름 = " + logger.getClass().getName());
         System.out.println("현재의 Mode  = " + account.getMode() + " " + account.getUsername());
         System.out.println("MybootProperties fullName = " + properties.getFullName());
 
