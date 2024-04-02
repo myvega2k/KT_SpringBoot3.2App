@@ -1,5 +1,6 @@
 package com.kt.myspringboot.runner;
 
+import com.kt.myspringboot.property.MybootProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;
@@ -14,6 +15,9 @@ public class MyRunner implements ApplicationRunner {
     @Autowired
     private Environment environment;
 
+    @Autowired
+    private MybootProperties properties;
+
     @Value("${myboot.name}")
     private String name;
 
@@ -21,6 +25,8 @@ public class MyRunner implements ApplicationRunner {
     private int age;
 
     public void run(ApplicationArguments args) throws Exception {
+        System.out.println("MybootProperties fullName = " + properties.getFullName());
+
         System.out.println("myboot.name 환경변수 = " + name);
         System.out.println("myboot.age 환경변수 = " + age);
         System.out.println("myboot.fullName 환경변수 " + environment.getProperty("myboot.fullName"));
