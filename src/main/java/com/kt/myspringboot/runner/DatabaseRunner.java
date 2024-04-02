@@ -1,5 +1,6 @@
 package com.kt.myspringboot.runner;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -10,16 +11,17 @@ import javax.sql.DataSource;
 import java.sql.Connection;
 @Component
 @Order(1)
+@Slf4j
 public class DatabaseRunner implements ApplicationRunner {
     @Autowired
     DataSource dataSource;
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        System.out.println("DataSource 구현객체는 ?? " + dataSource.getClass().getName());
+        log.info("DataSource 구현객체는 ?? {}", dataSource.getClass().getName());
         try (Connection connection = dataSource.getConnection()) {
-            System.out.println(connection.getMetaData().getURL());
-            System.out.println(connection.getMetaData().getUserName());
+            log.info("DB URL = {} ", connection.getMetaData().getURL());
+            log.info("DB Username = {}",connection.getMetaData().getUserName());
         }
     }
 }
