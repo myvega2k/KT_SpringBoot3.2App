@@ -1,5 +1,6 @@
 package com.kt.myspringboot.runner;
 
+import com.kt.myspringboot.dto.AccountDTO;
 import com.kt.myspringboot.property.MybootProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -24,7 +25,11 @@ public class MyRunner implements ApplicationRunner {
     @Value("${myboot.age}")
     private int age;
 
+    @Autowired
+    private AccountDTO account;
+
     public void run(ApplicationArguments args) throws Exception {
+        System.out.println("현재의 Mode  = " + account.getMode() + " " + account.getUsername());
         System.out.println("MybootProperties fullName = " + properties.getFullName());
 
         System.out.println("myboot.name 환경변수 = " + name);
