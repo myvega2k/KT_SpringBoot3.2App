@@ -32,17 +32,17 @@ public class MyRunner implements ApplicationRunner {
     private Logger logger = LoggerFactory.getLogger(MyRunner.class);
 
     public void run(ApplicationArguments args) throws Exception {
-        System.out.println("Logger 구현 클래스 이름 = " + logger.getClass().getName());
-        System.out.println("현재의 Mode  = " + account.getMode() + " " + account.getUsername());
-        System.out.println("MybootProperties fullName = " + properties.getFullName());
+        logger.info("Logger 구현 클래스 이름 = {}", logger.getClass().getName());
+        logger.info("현재의 Mode  = {} {}" ,account.getMode(), account.getUsername());
+        logger.info("MybootProperties fullName = {}", properties.getFullName());
 
-        System.out.println("myboot.name 환경변수 = " + name);
-        System.out.println("myboot.age 환경변수 = " + age);
-        System.out.println("myboot.fullName 환경변수 " + environment.getProperty("myboot.fullName"));
-        System.out.println("port 번호 " + environment.getProperty("local.server.port"));
+        logger.info("myboot.name 환경변수 = " + name);
+        logger.info("myboot.age 환경변수 = " + age);
+        logger.info("myboot.fullName 환경변수 " + environment.getProperty("myboot.fullName"));
+        logger.info("port 번호 " + environment.getProperty("local.server.port"));
 
-        System.out.println("VM Argument : " + args.containsOption("foo"));
-        System.out.println("Program Argument : " + args.containsOption("bar"));
+        logger.debug("VM Argument : " + args.containsOption("foo"));
+        logger.debug("Program Argument : " + args.containsOption("bar"));
 
         //람다식 구문
         args.getOptionNames()//java.util.Set
