@@ -1,8 +1,11 @@
 package com.kt.myspringboot.controller;
 
+import com.kt.myspringboot.entity.User;
 import com.kt.myspringboot.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,4 +20,8 @@ public class UserRestController {
 //        this.userRepository = userRepository;
 //    }
 
+    @PostMapping
+    public User create(@RequestBody User user) {
+        return userRepository.save(user);
+    }
 }
