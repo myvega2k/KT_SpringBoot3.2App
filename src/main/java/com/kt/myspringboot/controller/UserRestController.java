@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -23,11 +24,17 @@ public class UserRestController {
 //        this.userRepository = userRepository;
 //    }
 
+    @GetMapping("/welcome")
+    public String welcome() {
+        return "Welcome this endpoint is not secure";
+    }
+
     @PostMapping
     public User create(@RequestBody User user) {
         return userRepository.save(user);
     }
 
+    @PreAuthorize("hasAuthority('ROLE_USER')")
     @GetMapping("/{id}")
     public User getUser(@PathVariable Long id){
         Optional<User> optionalUser = userRepository.findById(id);
@@ -37,6 +44,7 @@ public class UserRestController {
         return user;
     }
 
+    @PreAuthorize("hasAuthority('ROLE_ADMIN')")
     @GetMapping
     public List<User> getUsers() {
         return userRepository.findAll();
