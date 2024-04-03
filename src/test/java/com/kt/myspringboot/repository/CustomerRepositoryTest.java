@@ -19,22 +19,30 @@ class CustomerRepositoryTest {
     CustomerRepository customerRepository;
 
     @Test
+    @Rollback(value = false)
     public void dupCustomer() throws Exception {
-        Customer customer = new Customer();
-        customer.setCustomerId("A001");
-        customer.setCustomerName("스프링");
-
         Optional<Customer> optional = customerRepository.findByCustomerId("A001");
         //void ifPresentOrElse(Consumer<? super T> action, Runnable emptyAction)
         //Consumer의 추상메서드 void accept(T t)
         //Ruunable의 추상메서드 void run()
         optional.ifPresentOrElse(
                 cust -> customerRepository.delete(cust),
-                () -> customerRepository.save(customer)
+                //customerRepository::delete,
+                () -> dupSave()
         );
 
-        System.out.println(customerRepository.findByCustomerId("A001").get().getCustomerName());
+    }
 
+    private void dupSave() {
+        Customer customer = new Customer();
+        customer.setCustomerId("A001");
+        customer.setCustomerName("스프링");
+
+        customerRepository.save(customer);
+        Optional<Customer> optional2 = customerRepository.findByCustomerId("A001");
+        if(optional2.isPresent()){
+            System.out.println(optional2.get().getCustomerName());
+        }
     }
 
     @Test

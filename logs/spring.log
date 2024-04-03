@@ -2074,3 +2074,458 @@ Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-valid
 2024-04-03T10:26:54.656+09:00  INFO 21080 --- [MySpringBootApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-04-03T10:26:54.660+09:00  INFO 21080 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
 2024-04-03T10:26:54.665+09:00  INFO 21080 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-04-03T10:44:26.888+09:00  INFO 14624 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Starting CustomerRepositoryTest using Java 17 with PID 14624 (started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T10:44:26.903+09:00  INFO 14624 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : The following 1 profile is active: "prod"
+2024-04-03T10:44:28.437+09:00  INFO 14624 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T10:44:28.492+09:00  INFO 14624 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interface.
+2024-04-03T10:44:29.550+09:00  INFO 14624 --- [MySpringBootApp] [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T10:44:29.642+09:00  INFO 14624 --- [MySpringBootApp] [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-03T10:44:29.686+09:00  INFO 14624 --- [MySpringBootApp] [main] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T10:44:29.993+09:00  INFO 14624 --- [MySpringBootApp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T10:44:30.029+09:00  INFO 14624 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-04-03T10:44:30.132+09:00  INFO 14624 --- [MySpringBootApp] [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@2f8f40cc
+2024-04-03T10:44:30.137+09:00  INFO 14624 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-04-03T10:44:30.175+09:00  WARN 14624 --- [MySpringBootApp] [main] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T10:44:30.977+09:00  INFO 14624 --- [MySpringBootApp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T10:44:31.023+09:00  INFO 14624 --- [MySpringBootApp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T10:44:31.284+09:00  WARN 14624 --- [MySpringBootApp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T10:44:31.743+09:00  WARN 14624 --- [MySpringBootApp] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-03T10:44:32.576+09:00  INFO 14624 --- [MySpringBootApp] [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-03T10:44:32.659+09:00  INFO 14624 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Started CustomerRepositoryTest in 6.302 seconds (process running for 7.717)
+2024-04-03T10:44:32.667+09:00  INFO 14624 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T10:44:32.668+09:00  INFO 14624 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T10:44:32.669+09:00  INFO 14624 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T10:44:32.669+09:00  INFO 14624 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T10:44:32.669+09:00  INFO 14624 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T10:44:32.670+09:00  INFO 14624 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T10:44:32.670+09:00  INFO 14624 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T10:44:32.670+09:00  INFO 14624 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 16
+2024-04-03T10:44:32.671+09:00  INFO 14624 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T10:44:32.671+09:00  INFO 14624 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : port 번호 null
+2024-04-03T10:44:33.362+09:00  INFO 14624 --- [MySpringBootApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T10:44:33.364+09:00  INFO 14624 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-04-03T10:44:33.367+09:00  INFO 14624 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-04-03T10:46:28.964+09:00  INFO 26320 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Starting CustomerRepositoryTest using Java 17 with PID 26320 (started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T10:46:28.978+09:00  INFO 26320 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : The following 1 profile is active: "prod"
+2024-04-03T10:46:30.705+09:00  INFO 26320 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T10:46:30.812+09:00  INFO 26320 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 1 JPA repository interface.
+2024-04-03T10:46:32.253+09:00  INFO 26320 --- [MySpringBootApp] [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T10:46:32.370+09:00  INFO 26320 --- [MySpringBootApp] [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-03T10:46:32.442+09:00  INFO 26320 --- [MySpringBootApp] [main] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T10:46:32.914+09:00  INFO 26320 --- [MySpringBootApp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T10:46:32.966+09:00  INFO 26320 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-04-03T10:46:33.102+09:00  INFO 26320 --- [MySpringBootApp] [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@54a6ef6
+2024-04-03T10:46:33.108+09:00  INFO 26320 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-04-03T10:46:33.142+09:00  WARN 26320 --- [MySpringBootApp] [main] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T10:46:34.124+09:00  INFO 26320 --- [MySpringBootApp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T10:46:34.174+09:00  INFO 26320 --- [MySpringBootApp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T10:46:34.519+09:00  WARN 26320 --- [MySpringBootApp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T10:46:35.116+09:00  WARN 26320 --- [MySpringBootApp] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-03T10:46:36.243+09:00  INFO 26320 --- [MySpringBootApp] [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-03T10:46:36.359+09:00  INFO 26320 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Started CustomerRepositoryTest in 7.887 seconds (process running for 10.263)
+2024-04-03T10:46:36.371+09:00  INFO 26320 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T10:46:36.372+09:00  INFO 26320 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T10:46:36.373+09:00  INFO 26320 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T10:46:36.374+09:00  INFO 26320 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T10:46:36.374+09:00  INFO 26320 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T10:46:36.374+09:00  INFO 26320 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T10:46:36.375+09:00  INFO 26320 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T10:46:36.375+09:00  INFO 26320 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 79
+2024-04-03T10:46:36.376+09:00  INFO 26320 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T10:46:36.377+09:00  INFO 26320 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : port 번호 null
+2024-04-03T10:46:37.327+09:00  INFO 26320 --- [MySpringBootApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T10:46:37.329+09:00  INFO 26320 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-04-03T10:46:37.333+09:00  INFO 26320 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-04-03T10:52:33.855+09:00  INFO 28536 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Starting CustomerRepositoryTest using Java 17 with PID 28536 (started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T10:52:33.867+09:00  INFO 28536 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : The following 1 profile is active: "prod"
+2024-04-03T10:52:35.248+09:00  INFO 28536 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T10:52:35.303+09:00  INFO 28536 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+2024-04-03T10:52:35.978+09:00  INFO 28536 --- [MySpringBootApp] [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T10:52:36.049+09:00  INFO 28536 --- [MySpringBootApp] [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-03T10:52:36.102+09:00  INFO 28536 --- [MySpringBootApp] [main] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T10:52:36.409+09:00  INFO 28536 --- [MySpringBootApp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T10:52:36.441+09:00  INFO 28536 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-04-03T10:52:36.549+09:00  INFO 28536 --- [MySpringBootApp] [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@4de158ca
+2024-04-03T10:52:36.554+09:00  INFO 28536 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-04-03T10:52:36.580+09:00  WARN 28536 --- [MySpringBootApp] [main] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T10:52:37.380+09:00  INFO 28536 --- [MySpringBootApp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T10:52:37.422+09:00  INFO 28536 --- [MySpringBootApp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T10:52:37.679+09:00  WARN 28536 --- [MySpringBootApp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T10:52:38.110+09:00  WARN 28536 --- [MySpringBootApp] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-03T10:52:38.909+09:00  INFO 28536 --- [MySpringBootApp] [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-03T10:52:38.996+09:00  INFO 28536 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Started CustomerRepositoryTest in 5.658 seconds (process running for 7.049)
+2024-04-03T10:52:39.008+09:00  INFO 28536 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T10:52:39.010+09:00  INFO 28536 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T10:52:39.010+09:00  INFO 28536 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T10:52:39.011+09:00  INFO 28536 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T10:52:39.011+09:00  INFO 28536 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T10:52:39.012+09:00  INFO 28536 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T10:52:39.012+09:00  INFO 28536 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T10:52:39.012+09:00  INFO 28536 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 82
+2024-04-03T10:52:39.013+09:00  INFO 28536 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T10:52:39.013+09:00  INFO 28536 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : port 번호 null
+2024-04-03T10:52:39.700+09:00  INFO 28536 --- [MySpringBootApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T10:52:39.703+09:00  INFO 28536 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-04-03T10:52:39.707+09:00  INFO 28536 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-04-03T10:54:11.793+09:00  INFO 26636 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Starting CustomerRepositoryTest using Java 17 with PID 26636 (started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T10:54:11.807+09:00  INFO 26636 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : The following 1 profile is active: "prod"
+2024-04-03T10:54:13.001+09:00  INFO 26636 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T10:54:13.046+09:00  INFO 26636 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interface.
+2024-04-03T10:54:13.749+09:00  INFO 26636 --- [MySpringBootApp] [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T10:54:13.820+09:00  INFO 26636 --- [MySpringBootApp] [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-03T10:54:13.862+09:00  INFO 26636 --- [MySpringBootApp] [main] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T10:54:14.149+09:00  INFO 26636 --- [MySpringBootApp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T10:54:14.179+09:00  INFO 26636 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-04-03T10:54:14.274+09:00  INFO 26636 --- [MySpringBootApp] [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@774013dc
+2024-04-03T10:54:14.276+09:00  INFO 26636 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-04-03T10:54:14.302+09:00  WARN 26636 --- [MySpringBootApp] [main] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T10:54:15.138+09:00  INFO 26636 --- [MySpringBootApp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T10:54:15.182+09:00  INFO 26636 --- [MySpringBootApp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T10:54:15.461+09:00  WARN 26636 --- [MySpringBootApp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T10:54:15.909+09:00  WARN 26636 --- [MySpringBootApp] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-03T10:54:16.757+09:00  INFO 26636 --- [MySpringBootApp] [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-03T10:54:16.840+09:00  INFO 26636 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Started CustomerRepositoryTest in 5.436 seconds (process running for 6.761)
+2024-04-03T10:54:16.848+09:00  INFO 26636 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T10:54:16.848+09:00  INFO 26636 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T10:54:16.849+09:00  INFO 26636 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T10:54:16.849+09:00  INFO 26636 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T10:54:16.849+09:00  INFO 26636 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T10:54:16.849+09:00  INFO 26636 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T10:54:16.850+09:00  INFO 26636 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T10:54:16.850+09:00  INFO 26636 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 48
+2024-04-03T10:54:16.850+09:00  INFO 26636 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T10:54:16.851+09:00  INFO 26636 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : port 번호 null
+2024-04-03T10:54:17.576+09:00  INFO 26636 --- [MySpringBootApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T10:54:17.579+09:00  INFO 26636 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-04-03T10:54:17.582+09:00  INFO 26636 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-04-03T10:55:39.521+09:00  INFO 8540 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Starting CustomerRepositoryTest using Java 17 with PID 8540 (started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T10:55:39.550+09:00  INFO 8540 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : The following 1 profile is active: "prod"
+2024-04-03T10:55:42.403+09:00  INFO 8540 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T10:55:42.536+09:00  INFO 8540 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115 ms. Found 1 JPA repository interface.
+2024-04-03T10:55:43.771+09:00  INFO 8540 --- [MySpringBootApp] [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T10:55:43.947+09:00  INFO 8540 --- [MySpringBootApp] [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-03T10:55:44.050+09:00  INFO 8540 --- [MySpringBootApp] [main] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T10:55:44.572+09:00  INFO 8540 --- [MySpringBootApp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T10:55:44.629+09:00  INFO 8540 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-04-03T10:55:44.820+09:00  INFO 8540 --- [MySpringBootApp] [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@1b465fa9
+2024-04-03T10:55:44.823+09:00  INFO 8540 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-04-03T10:55:44.880+09:00  WARN 8540 --- [MySpringBootApp] [main] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T10:55:46.112+09:00  INFO 8540 --- [MySpringBootApp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T10:55:46.177+09:00  INFO 8540 --- [MySpringBootApp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T10:55:46.610+09:00  WARN 8540 --- [MySpringBootApp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T10:55:47.378+09:00  WARN 8540 --- [MySpringBootApp] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-03T10:55:48.854+09:00  INFO 8540 --- [MySpringBootApp] [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-03T10:55:48.998+09:00  INFO 8540 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Started CustomerRepositoryTest in 10.585 seconds (process running for 12.649)
+2024-04-03T10:55:49.010+09:00  INFO 8540 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T10:55:49.012+09:00  INFO 8540 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T10:55:49.012+09:00  INFO 8540 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T10:55:49.013+09:00  INFO 8540 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T10:55:49.014+09:00  INFO 8540 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T10:55:49.014+09:00  INFO 8540 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T10:55:49.015+09:00  INFO 8540 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T10:55:49.016+09:00  INFO 8540 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 72
+2024-04-03T10:55:49.016+09:00  INFO 8540 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T10:55:49.017+09:00  INFO 8540 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : port 번호 null
+2024-04-03T10:55:50.173+09:00  WARN 8540 --- [MySpringBootApp] [main] o.m.j.m.s.ErrorPacket                    : Error: 1062-23000: Duplicate entry 'A001' for key 'UK_n6axkf7qwn8r7s7ce5gso1xpr'
+2024-04-03T10:55:50.174+09:00  WARN 8540 --- [MySpringBootApp] [main] o.h.e.j.s.SqlExceptionHelper             : SQL Error: 1062, SQLState: 23000
+2024-04-03T10:55:50.175+09:00 ERROR 8540 --- [MySpringBootApp] [main] o.h.e.j.s.SqlExceptionHelper             : (conn=210) Duplicate entry 'A001' for key 'UK_n6axkf7qwn8r7s7ce5gso1xpr'
+2024-04-03T10:55:50.201+09:00  WARN 8540 --- [MySpringBootApp] [main] o.s.t.c.TestContextManager               : Caught exception while invoking 'afterTestMethod' callback on TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] for test method [public void com.kt.myspringboot.repository.CustomerRepositoryTest.dupCustomer() throws java.lang.Exception] and test instance [com.kt.myspringboot.repository.CustomerRepositoryTest@4a89722e]
+
+org.springframework.transaction.UnexpectedRollbackException: Transaction silently rolled back because it has been marked as rollback-only
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:803) ~[spring-tx-6.1.5.jar:6.1.5]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:757) ~[spring-tx-6.1.5.jar:6.1.5]
+	at org.springframework.test.context.transaction.TransactionContext.endTransaction(TransactionContext.java:135) ~[spring-test-6.1.5.jar:6.1.5]
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.afterTestMethod(TransactionalTestExecutionListener.java:259) ~[spring-test-6.1.5.jar:6.1.5]
+	at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:487) ~[spring-test-6.1.5.jar:6.1.5]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.afterEach(SpringExtension.java:278) ~[spring-test-6.1.5.jar:6.1.5]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAfterEachCallbacks$12(TestMethodTestDescriptor.java:261) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$13(TestMethodTestDescriptor.java:277) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$14(TestMethodTestDescriptor.java:277) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.platform.commons.util.CollectionUtils.forEachInReverseOrder(CollectionUtils.java:217) ~[junit-platform-commons-1.10.2.jar:1.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAllAfterMethodsOrCallbacks(TestMethodTestDescriptor.java:276) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAfterEachCallbacks(TestMethodTestDescriptor.java:260) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:145) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57) [junit5-rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) [idea_rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55) [junit-rt.jar:?]
+
+2024-04-03T10:55:50.240+09:00  INFO 8540 --- [MySpringBootApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T10:55:50.244+09:00  INFO 8540 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-04-03T10:55:50.251+09:00  INFO 8540 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-04-03T10:56:59.807+09:00  INFO 8640 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Starting CustomerRepositoryTest using Java 17 with PID 8640 (started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T10:56:59.817+09:00  INFO 8640 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : The following 1 profile is active: "prod"
+2024-04-03T10:57:00.785+09:00  INFO 8640 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T10:57:00.842+09:00  INFO 8640 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interface.
+2024-04-03T10:57:01.532+09:00  INFO 8640 --- [MySpringBootApp] [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T10:57:01.606+09:00  INFO 8640 --- [MySpringBootApp] [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-03T10:57:01.648+09:00  INFO 8640 --- [MySpringBootApp] [main] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T10:57:01.957+09:00  INFO 8640 --- [MySpringBootApp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T10:57:01.988+09:00  INFO 8640 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-04-03T10:57:02.089+09:00  INFO 8640 --- [MySpringBootApp] [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@30ef32eb
+2024-04-03T10:57:02.091+09:00  INFO 8640 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-04-03T10:57:02.120+09:00  WARN 8640 --- [MySpringBootApp] [main] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T10:57:02.924+09:00  INFO 8640 --- [MySpringBootApp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T10:57:02.969+09:00  INFO 8640 --- [MySpringBootApp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T10:57:03.215+09:00  WARN 8640 --- [MySpringBootApp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T10:57:03.670+09:00  WARN 8640 --- [MySpringBootApp] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-03T10:57:04.569+09:00  INFO 8640 --- [MySpringBootApp] [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-03T10:57:04.657+09:00  INFO 8640 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Started CustomerRepositoryTest in 5.187 seconds (process running for 6.449)
+2024-04-03T10:57:04.665+09:00  INFO 8640 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T10:57:04.666+09:00  INFO 8640 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T10:57:04.666+09:00  INFO 8640 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T10:57:04.666+09:00  INFO 8640 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T10:57:04.666+09:00  INFO 8640 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T10:57:04.667+09:00  INFO 8640 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T10:57:04.667+09:00  INFO 8640 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T10:57:04.667+09:00  INFO 8640 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 65
+2024-04-03T10:57:04.668+09:00  INFO 8640 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T10:57:04.668+09:00  INFO 8640 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : port 번호 null
+2024-04-03T10:57:05.298+09:00  WARN 8640 --- [MySpringBootApp] [main] o.m.j.m.s.ErrorPacket                    : Error: 1062-23000: Duplicate entry 'A001' for key 'UK_n6axkf7qwn8r7s7ce5gso1xpr'
+2024-04-03T10:57:05.300+09:00  WARN 8640 --- [MySpringBootApp] [main] o.h.e.j.s.SqlExceptionHelper             : SQL Error: 1062, SQLState: 23000
+2024-04-03T10:57:05.300+09:00 ERROR 8640 --- [MySpringBootApp] [main] o.h.e.j.s.SqlExceptionHelper             : (conn=220) Duplicate entry 'A001' for key 'UK_n6axkf7qwn8r7s7ce5gso1xpr'
+2024-04-03T10:57:05.318+09:00  WARN 8640 --- [MySpringBootApp] [main] o.s.t.c.TestContextManager               : Caught exception while invoking 'afterTestMethod' callback on TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] for test method [public void com.kt.myspringboot.repository.CustomerRepositoryTest.dupCustomer() throws java.lang.Exception] and test instance [com.kt.myspringboot.repository.CustomerRepositoryTest@2d487df4]
+
+org.springframework.transaction.UnexpectedRollbackException: Transaction silently rolled back because it has been marked as rollback-only
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:803) ~[spring-tx-6.1.5.jar:6.1.5]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:757) ~[spring-tx-6.1.5.jar:6.1.5]
+	at org.springframework.test.context.transaction.TransactionContext.endTransaction(TransactionContext.java:135) ~[spring-test-6.1.5.jar:6.1.5]
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.afterTestMethod(TransactionalTestExecutionListener.java:259) ~[spring-test-6.1.5.jar:6.1.5]
+	at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:487) ~[spring-test-6.1.5.jar:6.1.5]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.afterEach(SpringExtension.java:278) ~[spring-test-6.1.5.jar:6.1.5]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAfterEachCallbacks$12(TestMethodTestDescriptor.java:261) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$13(TestMethodTestDescriptor.java:277) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$14(TestMethodTestDescriptor.java:277) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.platform.commons.util.CollectionUtils.forEachInReverseOrder(CollectionUtils.java:217) ~[junit-platform-commons-1.10.2.jar:1.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAllAfterMethodsOrCallbacks(TestMethodTestDescriptor.java:276) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAfterEachCallbacks(TestMethodTestDescriptor.java:260) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:145) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57) [junit5-rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) [idea_rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55) [junit-rt.jar:?]
+
+2024-04-03T10:57:05.361+09:00  INFO 8640 --- [MySpringBootApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T10:57:05.365+09:00  INFO 8640 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-04-03T10:57:05.368+09:00  INFO 8640 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-04-03T10:58:31.437+09:00  INFO 34344 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Starting CustomerRepositoryTest using Java 17 with PID 34344 (started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T10:58:31.448+09:00  INFO 34344 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : The following 1 profile is active: "prod"
+2024-04-03T10:58:32.448+09:00  INFO 34344 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T10:58:32.497+09:00  INFO 34344 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interface.
+2024-04-03T10:58:33.201+09:00  INFO 34344 --- [MySpringBootApp] [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T10:58:33.269+09:00  INFO 34344 --- [MySpringBootApp] [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-03T10:58:33.316+09:00  INFO 34344 --- [MySpringBootApp] [main] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T10:58:33.625+09:00  INFO 34344 --- [MySpringBootApp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T10:58:33.660+09:00  INFO 34344 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-04-03T10:58:33.776+09:00  INFO 34344 --- [MySpringBootApp] [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@4f2fdf3d
+2024-04-03T10:58:33.777+09:00  INFO 34344 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-04-03T10:58:33.802+09:00  WARN 34344 --- [MySpringBootApp] [main] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T10:58:34.604+09:00  INFO 34344 --- [MySpringBootApp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T10:58:34.648+09:00  INFO 34344 --- [MySpringBootApp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T10:58:34.920+09:00  WARN 34344 --- [MySpringBootApp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T10:58:35.415+09:00  WARN 34344 --- [MySpringBootApp] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-03T10:58:36.570+09:00  INFO 34344 --- [MySpringBootApp] [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-03T10:58:36.672+09:00  INFO 34344 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Started CustomerRepositoryTest in 5.555 seconds (process running for 7.02)
+2024-04-03T10:58:36.680+09:00  INFO 34344 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T10:58:36.681+09:00  INFO 34344 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T10:58:36.681+09:00  INFO 34344 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T10:58:36.682+09:00  INFO 34344 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T10:58:36.682+09:00  INFO 34344 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T10:58:36.682+09:00  INFO 34344 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T10:58:36.683+09:00  INFO 34344 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T10:58:36.683+09:00  INFO 34344 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 55
+2024-04-03T10:58:36.683+09:00  INFO 34344 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T10:58:36.684+09:00  INFO 34344 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : port 번호 null
+2024-04-03T10:58:37.414+09:00  WARN 34344 --- [MySpringBootApp] [main] o.m.j.m.s.ErrorPacket                    : Error: 1062-23000: Duplicate entry 'A001' for key 'UK_n6axkf7qwn8r7s7ce5gso1xpr'
+2024-04-03T10:58:37.415+09:00  WARN 34344 --- [MySpringBootApp] [main] o.h.e.j.s.SqlExceptionHelper             : SQL Error: 1062, SQLState: 23000
+2024-04-03T10:58:37.416+09:00 ERROR 34344 --- [MySpringBootApp] [main] o.h.e.j.s.SqlExceptionHelper             : (conn=230) Duplicate entry 'A001' for key 'UK_n6axkf7qwn8r7s7ce5gso1xpr'
+2024-04-03T10:58:37.434+09:00  WARN 34344 --- [MySpringBootApp] [main] o.s.t.c.TestContextManager               : Caught exception while invoking 'afterTestMethod' callback on TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] for test method [public void com.kt.myspringboot.repository.CustomerRepositoryTest.dupCustomer() throws java.lang.Exception] and test instance [com.kt.myspringboot.repository.CustomerRepositoryTest@1d1a706]
+
+org.springframework.transaction.UnexpectedRollbackException: Transaction silently rolled back because it has been marked as rollback-only
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:803) ~[spring-tx-6.1.5.jar:6.1.5]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:757) ~[spring-tx-6.1.5.jar:6.1.5]
+	at org.springframework.test.context.transaction.TransactionContext.endTransaction(TransactionContext.java:135) ~[spring-test-6.1.5.jar:6.1.5]
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.afterTestMethod(TransactionalTestExecutionListener.java:259) ~[spring-test-6.1.5.jar:6.1.5]
+	at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:487) ~[spring-test-6.1.5.jar:6.1.5]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.afterEach(SpringExtension.java:278) ~[spring-test-6.1.5.jar:6.1.5]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAfterEachCallbacks$12(TestMethodTestDescriptor.java:261) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$13(TestMethodTestDescriptor.java:277) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$14(TestMethodTestDescriptor.java:277) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.platform.commons.util.CollectionUtils.forEachInReverseOrder(CollectionUtils.java:217) ~[junit-platform-commons-1.10.2.jar:1.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAllAfterMethodsOrCallbacks(TestMethodTestDescriptor.java:276) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAfterEachCallbacks(TestMethodTestDescriptor.java:260) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:145) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57) [junit5-rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) [idea_rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55) [junit-rt.jar:?]
+
+2024-04-03T10:58:37.460+09:00  INFO 34344 --- [MySpringBootApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T10:58:37.462+09:00  INFO 34344 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-04-03T10:58:37.466+09:00  INFO 34344 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-04-03T11:01:10.009+09:00  INFO 17864 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Starting CustomerRepositoryTest using Java 17 with PID 17864 (started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T11:01:10.021+09:00  INFO 17864 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : The following 1 profile is active: "prod"
+2024-04-03T11:01:11.230+09:00  INFO 17864 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T11:01:11.325+09:00  INFO 17864 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 1 JPA repository interface.
+2024-04-03T11:01:12.151+09:00  INFO 17864 --- [MySpringBootApp] [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T11:01:12.220+09:00  INFO 17864 --- [MySpringBootApp] [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-03T11:01:12.263+09:00  INFO 17864 --- [MySpringBootApp] [main] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T11:01:12.546+09:00  INFO 17864 --- [MySpringBootApp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T11:01:12.580+09:00  INFO 17864 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-04-03T11:01:12.699+09:00  INFO 17864 --- [MySpringBootApp] [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@174b8d0e
+2024-04-03T11:01:12.701+09:00  INFO 17864 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-04-03T11:01:12.730+09:00  WARN 17864 --- [MySpringBootApp] [main] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T11:01:13.683+09:00  INFO 17864 --- [MySpringBootApp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T11:01:13.732+09:00  INFO 17864 --- [MySpringBootApp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T11:01:13.996+09:00  WARN 17864 --- [MySpringBootApp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T11:01:14.466+09:00  WARN 17864 --- [MySpringBootApp] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-03T11:01:15.301+09:00  INFO 17864 --- [MySpringBootApp] [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-03T11:01:15.382+09:00  INFO 17864 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Started CustomerRepositoryTest in 5.78 seconds (process running for 7.07)
+2024-04-03T11:01:15.390+09:00  INFO 17864 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T11:01:15.391+09:00  INFO 17864 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T11:01:15.391+09:00  INFO 17864 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T11:01:15.392+09:00  INFO 17864 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T11:01:15.392+09:00  INFO 17864 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T11:01:15.392+09:00  INFO 17864 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T11:01:15.393+09:00  INFO 17864 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T11:01:15.393+09:00  INFO 17864 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 90
+2024-04-03T11:01:15.393+09:00  INFO 17864 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T11:01:15.394+09:00  INFO 17864 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : port 번호 null
+2024-04-03T11:01:16.081+09:00  INFO 17864 --- [MySpringBootApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T11:01:16.083+09:00  INFO 17864 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-04-03T11:01:16.087+09:00  INFO 17864 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
