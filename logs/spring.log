@@ -7042,3 +7042,692 @@ Unconditional classes:
 2024-04-03T16:54:37.522+09:00  INFO 16080 --- [MySpringBootApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-04-03T16:54:37.523+09:00  INFO 16080 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown initiated...
 2024-04-03T16:54:37.527+09:00  INFO 16080 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown completed.
+2024-04-03T16:54:47.776+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Starting MySpringBootAppApplication using Java 17 with PID 33976 (C:\KT_springboot\MySpringBootApp\target\classes started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T16:54:47.797+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : The following 1 profile is active: "prod"
+2024-04-03T16:54:47.914+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-03T16:54:47.915+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-03T16:54:51.195+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T16:54:51.334+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 120 ms. Found 2 JPA repository interfaces.
+2024-04-03T16:54:53.689+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2024-04-03T16:54:53.711+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-04-03T16:54:53.712+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-03T16:54:53.830+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-04-03T16:54:53.833+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5914 ms
+2024-04-03T16:54:54.142+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-04-03T16:54:54.323+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@33e2725
+2024-04-03T16:54:54.326+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-04-03T16:54:54.348+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=***'
+2024-04-03T16:54:54.730+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T16:54:54.851+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-03T16:54:54.930+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T16:54:55.578+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T16:54:55.658+09:00  WARN 33976 --- [MySpringBootApp] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T16:54:57.085+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T16:54:57.142+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T16:54:57.930+09:00  WARN 33976 --- [MySpringBootApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T16:54:58.554+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-04-03T16:54:59.442+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-04-03T16:54:59.713+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@74b3e937, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f22dbcb, org.springframework.security.web.context.SecurityContextHolderFilter@7245e840, org.springframework.security.web.header.HeaderWriterFilter@4dd3dbeb, org.springframework.web.filter.CorsFilter@60daf2fc, org.springframework.security.web.authentication.logout.LogoutFilter@42157630, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@304321ba, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3ce6fd0a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@64e0bfcd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d0cb60e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@288271e8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ff11837, org.springframework.security.web.access.ExceptionTranslationFilter@10f4a76c, org.springframework.security.web.access.intercept.AuthorizationFilter@116b6684]
+2024-04-03T16:55:00.799+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-03T16:55:00.918+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path ''
+2024-04-03T16:55:00.946+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 14.168 seconds (process running for 16.13)
+2024-04-03T16:55:00.958+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T16:55:00.959+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T16:55:00.960+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T16:55:00.961+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T16:55:00.962+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T16:55:00.962+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T16:55:00.963+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T16:55:00.963+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 92
+2024-04-03T16:55:00.964+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T16:55:00.964+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : port 번호 8080
+2024-04-03T16:55:01.146+09:00  INFO 33976 --- [MySpringBootApp] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 34fecff80a31
+2024-04-03T16:55:01.226+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-03T16:55:01.226+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-04-03T16:55:01.228+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2024-04-03T16:55:50.592+09:00  INFO 33976 --- [MySpringBootApp] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-04-03T16:55:50.623+09:00  INFO 33976 --- [MySpringBootApp] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T16:55:50.628+09:00  INFO 33976 --- [MySpringBootApp] [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-04-03T16:55:50.632+09:00  INFO 33976 --- [MySpringBootApp] [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-04-03T16:55:50.777+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Starting MySpringBootAppApplication using Java 17 with PID 33976 (C:\KT_springboot\MySpringBootApp\target\classes started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T16:55:50.778+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : The following 1 profile is active: "prod"
+2024-04-03T16:55:51.534+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T16:55:51.564+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces.
+2024-04-03T16:55:51.948+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2024-04-03T16:55:51.950+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-04-03T16:55:51.951+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-03T16:55:52.016+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-04-03T16:55:52.017+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1237 ms
+2024-04-03T16:55:52.138+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2024-04-03T16:55:52.147+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-2 - Added connection org.mariadb.jdbc.Connection@916314b
+2024-04-03T16:55:52.148+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2024-04-03T16:55:52.149+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=***'
+2024-04-03T16:55:52.352+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T16:55:52.361+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T16:55:52.375+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T16:55:52.380+09:00  WARN 33976 --- [MySpringBootApp] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T16:55:52.496+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T16:55:52.528+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T16:55:52.949+09:00  WARN 33976 --- [MySpringBootApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T16:55:53.474+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-04-03T16:55:54.177+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-04-03T16:55:54.343+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@153e7956, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64116c4f, org.springframework.security.web.context.SecurityContextHolderFilter@6f8bb313, org.springframework.security.web.header.HeaderWriterFilter@61b58714, org.springframework.web.filter.CorsFilter@1b27eba5, org.springframework.security.web.authentication.logout.LogoutFilter@7adf26bc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@149e664, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@d7dafc4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@f10ea03, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56e3060b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a3bc10d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6902d67e, org.springframework.security.web.access.ExceptionTranslationFilter@3ce27c1, org.springframework.security.web.access.intercept.AuthorizationFilter@5b9cdd4]
+2024-04-03T16:55:55.872+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-03T16:55:55.983+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path ''
+2024-04-03T16:55:56.001+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 5.283 seconds (process running for 71.187)
+2024-04-03T16:55:56.005+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T16:55:56.011+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T16:55:56.013+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T16:55:56.013+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T16:55:56.017+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T16:55:56.018+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T16:55:56.019+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T16:55:56.021+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 98
+2024-04-03T16:55:56.022+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T16:55:56.023+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : port 번호 8080
+2024-04-03T16:55:56.032+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-03T16:55:56.081+09:00  INFO 33976 --- [MySpringBootApp] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 34fecff80a31
+2024-04-03T16:55:56.119+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-03T16:55:56.120+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-04-03T16:55:56.126+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 6 ms
+2024-04-03T16:55:57.382+09:00  INFO 33976 --- [MySpringBootApp] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-04-03T16:55:57.414+09:00  INFO 33976 --- [MySpringBootApp] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T16:55:57.416+09:00  INFO 33976 --- [MySpringBootApp] [Thread-7] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown initiated...
+2024-04-03T16:55:57.421+09:00  INFO 33976 --- [MySpringBootApp] [Thread-7] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown completed.
+2024-04-03T16:55:57.618+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Starting MySpringBootAppApplication using Java 17 with PID 33976 (C:\KT_springboot\MySpringBootApp\target\classes started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T16:55:57.620+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : The following 1 profile is active: "prod"
+2024-04-03T16:55:58.434+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T16:55:58.460+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 2 JPA repository interfaces.
+2024-04-03T16:55:58.756+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2024-04-03T16:55:58.758+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-04-03T16:55:58.759+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-03T16:55:58.815+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-04-03T16:55:58.816+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1191 ms
+2024-04-03T16:55:58.891+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Starting...
+2024-04-03T16:55:58.897+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-3 - Added connection org.mariadb.jdbc.Connection@1f081a9a
+2024-04-03T16:55:58.897+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Start completed.
+2024-04-03T16:55:58.897+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=***'
+2024-04-03T16:55:59.128+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T16:55:59.135+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T16:55:59.159+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T16:55:59.162+09:00  WARN 33976 --- [MySpringBootApp] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T16:55:59.300+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T16:55:59.329+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T16:55:59.560+09:00  WARN 33976 --- [MySpringBootApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T16:55:59.929+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-04-03T16:56:00.343+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-04-03T16:56:00.412+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@565ce861, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@406e8287, org.springframework.security.web.context.SecurityContextHolderFilter@30f5fe27, org.springframework.security.web.header.HeaderWriterFilter@23a3d9e0, org.springframework.web.filter.CorsFilter@2d28f6a, org.springframework.security.web.authentication.logout.LogoutFilter@7b3ee0b9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@160a9071, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@17a55d4b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5ee32ae6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39c1498f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5892794b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f4dcebb, org.springframework.security.web.access.ExceptionTranslationFilter@4d74ad8d, org.springframework.security.web.access.intercept.AuthorizationFilter@358f2f5d]
+2024-04-03T16:56:00.777+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-03T16:56:00.806+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path ''
+2024-04-03T16:56:00.816+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 3.304 seconds (process running for 76.001)
+2024-04-03T16:56:00.819+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T16:56:00.821+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T16:56:00.821+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T16:56:00.821+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T16:56:00.822+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T16:56:00.822+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T16:56:00.822+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T16:56:00.824+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 90
+2024-04-03T16:56:00.824+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T16:56:00.825+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : port 번호 8080
+2024-04-03T16:56:00.829+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-03T16:56:00.850+09:00  INFO 33976 --- [MySpringBootApp] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 34fecff80a31
+2024-04-03T16:56:00.880+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-03T16:56:00.881+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-04-03T16:56:00.882+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2024-04-03T16:57:12.060+09:00  INFO 33976 --- [MySpringBootApp] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2024-04-03T16:57:12.084+09:00  INFO 33976 --- [MySpringBootApp] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T16:57:12.085+09:00  INFO 33976 --- [MySpringBootApp] [Thread-11] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown initiated...
+2024-04-03T16:57:12.087+09:00  INFO 33976 --- [MySpringBootApp] [Thread-11] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown completed.
+2024-04-03T16:57:12.189+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Starting MySpringBootAppApplication using Java 17 with PID 33976 (C:\KT_springboot\MySpringBootApp\target\classes started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T16:57:12.191+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : The following 1 profile is active: "prod"
+2024-04-03T16:57:12.777+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T16:57:12.802+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2024-04-03T16:57:13.198+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2024-04-03T16:57:13.201+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-04-03T16:57:13.202+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-03T16:57:13.316+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-04-03T16:57:13.316+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1122 ms
+2024-04-03T16:57:13.456+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Starting...
+2024-04-03T16:57:13.464+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-4 - Added connection org.mariadb.jdbc.Connection@752a7695
+2024-04-03T16:57:13.465+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Start completed.
+2024-04-03T16:57:13.465+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=***'
+2024-04-03T16:57:13.623+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T16:57:13.633+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T16:57:13.645+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T16:57:13.649+09:00  WARN 33976 --- [MySpringBootApp] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T16:57:13.759+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T16:57:13.795+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T16:57:14.069+09:00  WARN 33976 --- [MySpringBootApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T16:57:14.116+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-04-03T16:57:14.778+09:00  WARN 33976 --- [MySpringBootApp] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6a0efabc-d563-4909-be26-1af4e70444c7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-04-03T16:57:14.850+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-04-03T16:57:14.908+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7f4ae32a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3b461355, org.springframework.security.web.context.SecurityContextHolderFilter@5810d33d, org.springframework.security.web.header.HeaderWriterFilter@78a5d9dd, org.springframework.web.filter.CorsFilter@6bb6353f, org.springframework.security.web.csrf.CsrfFilter@3502e150, org.springframework.security.web.authentication.logout.LogoutFilter@57fb2184, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1a4c8b96, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@23245143, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@44a8a615, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@49b1bf21, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e0a8ade, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@120e9e72, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6cd35e19, org.springframework.security.web.access.ExceptionTranslationFilter@3f9d8f3c, org.springframework.security.web.access.intercept.AuthorizationFilter@16119d27]
+2024-04-03T16:57:15.090+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-03T16:57:15.115+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path ''
+2024-04-03T16:57:15.124+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 2.987 seconds (process running for 150.31)
+2024-04-03T16:57:15.127+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T16:57:15.128+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T16:57:15.128+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T16:57:15.128+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T16:57:15.129+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T16:57:15.129+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T16:57:15.129+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T16:57:15.130+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 87
+2024-04-03T16:57:15.130+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T16:57:15.130+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : port 번호 8080
+2024-04-03T16:57:15.138+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   ManagementWebSecurityAutoConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   UserDetailsServiceAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+      - AnyNestedCondition 1 matched 2 did not; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.PasswordConfigured @ConditionalOnProperty (spring.security.user.password) did not find property 'password'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.NameConfigured @ConditionalOnProperty (spring.security.user.name) did not find property 'name'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.MissingAlternative @ConditionalOnMissingClass did not find unwanted classes 'org.springframework.security.oauth2.client.registration.ClientRegistrationRepository', 'org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector', 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured)
+      - @ConditionalOnBean (types: org.springframework.security.config.annotation.ObjectPostProcessor; SearchStrategy: all) found bean 'objectPostProcessor'; @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-04-03T16:57:15.153+09:00  INFO 33976 --- [MySpringBootApp] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 34fecff80a31
+2024-04-03T16:57:15.210+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-03T16:57:15.210+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-04-03T16:57:15.213+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2024-04-03T16:57:16.602+09:00  INFO 33976 --- [MySpringBootApp] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (2 additions, 0 deletions, 1 modification)
+2024-04-03T16:57:16.641+09:00  INFO 33976 --- [MySpringBootApp] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T16:57:16.643+09:00  INFO 33976 --- [MySpringBootApp] [Thread-15] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown initiated...
+2024-04-03T16:57:16.647+09:00  INFO 33976 --- [MySpringBootApp] [Thread-15] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown completed.
+2024-04-03T16:57:16.875+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Starting MySpringBootAppApplication using Java 17 with PID 33976 (C:\KT_springboot\MySpringBootApp\target\classes started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T16:57:16.877+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : The following 1 profile is active: "prod"
+2024-04-03T16:57:17.693+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T16:57:17.718+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+2024-04-03T16:57:18.046+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2024-04-03T16:57:18.054+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-04-03T16:57:18.055+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-03T16:57:18.126+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-04-03T16:57:18.126+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1245 ms
+2024-04-03T16:57:18.219+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-5 - Starting...
+2024-04-03T16:57:18.225+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-5 - Added connection org.mariadb.jdbc.Connection@6c7e1b07
+2024-04-03T16:57:18.225+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-5 - Start completed.
+2024-04-03T16:57:18.226+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=***'
+2024-04-03T16:57:18.321+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T16:57:18.331+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T16:57:18.338+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T16:57:18.341+09:00  WARN 33976 --- [MySpringBootApp] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T16:57:18.420+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T16:57:18.438+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T16:57:18.613+09:00  WARN 33976 --- [MySpringBootApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T16:57:18.893+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-04-03T16:57:19.112+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-04-03T16:57:19.155+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4b06448d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3fa1312d, org.springframework.security.web.context.SecurityContextHolderFilter@155e06d3, org.springframework.security.web.header.HeaderWriterFilter@77002cb3, org.springframework.web.filter.CorsFilter@389b1396, org.springframework.security.web.authentication.logout.LogoutFilter@6ae5f855, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@11014edd, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@519df915, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@42c102d8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@497b1d89, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69110473, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b9a0421, org.springframework.security.web.access.ExceptionTranslationFilter@3eb86a36, org.springframework.security.web.access.intercept.AuthorizationFilter@7fcf67a7]
+2024-04-03T16:57:19.410+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-03T16:57:19.427+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path ''
+2024-04-03T16:57:19.435+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 2.657 seconds (process running for 154.62)
+2024-04-03T16:57:19.437+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T16:57:19.438+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T16:57:19.438+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T16:57:19.438+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T16:57:19.438+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T16:57:19.438+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T16:57:19.439+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T16:57:19.439+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 90
+2024-04-03T16:57:19.440+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T16:57:19.440+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : port 번호 8080
+2024-04-03T16:57:19.443+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   ManagementWebSecurityAutoConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' securityFilterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+      Matched:
+         - found 'session' scope (OnWebApplicationCondition)
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder; SearchStrategy: all) found beans of type 'org.springframework.security.core.userdetails.UserDetailsService' userDetailsService (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+         - AnyNestedCondition 1 matched 2 did not; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.PasswordConfigured @ConditionalOnProperty (spring.security.user.password) did not find property 'password'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.NameConfigured @ConditionalOnProperty (spring.security.user.name) did not find property 'name'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.MissingAlternative @ConditionalOnMissingClass did not find unwanted classes 'org.springframework.security.oauth2.client.registration.ClientRegistrationRepository', 'org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector', 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-04-03T16:57:19.456+09:00  INFO 33976 --- [MySpringBootApp] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 34fecff80a31
+2024-04-03T16:57:19.472+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-03T16:57:19.473+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-04-03T16:57:19.474+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2024-04-03T17:02:54.660+09:00  INFO 33976 --- [MySpringBootApp] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-04-03T17:02:54.714+09:00  INFO 33976 --- [MySpringBootApp] [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T17:02:54.715+09:00  INFO 33976 --- [MySpringBootApp] [Thread-19] c.z.h.HikariDataSource                   : HikariPool-5 - Shutdown initiated...
+2024-04-03T17:02:54.720+09:00  INFO 33976 --- [MySpringBootApp] [Thread-19] c.z.h.HikariDataSource                   : HikariPool-5 - Shutdown completed.
+2024-04-03T17:02:54.960+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Starting MySpringBootAppApplication using Java 17 with PID 33976 (C:\KT_springboot\MySpringBootApp\target\classes started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T17:02:54.962+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : The following 1 profile is active: "prod"
+2024-04-03T17:02:55.779+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T17:02:55.804+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+2024-04-03T17:02:56.144+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2024-04-03T17:02:56.146+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-04-03T17:02:56.147+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-03T17:02:56.200+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-04-03T17:02:56.200+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1234 ms
+2024-04-03T17:02:56.305+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-6 - Starting...
+2024-04-03T17:02:56.311+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-6 - Added connection org.mariadb.jdbc.Connection@40e9a001
+2024-04-03T17:02:56.311+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-6 - Start completed.
+2024-04-03T17:02:56.312+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=***'
+2024-04-03T17:02:56.458+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T17:02:56.464+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T17:02:56.474+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T17:02:56.476+09:00  WARN 33976 --- [MySpringBootApp] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T17:02:56.571+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T17:02:56.598+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T17:02:56.853+09:00  WARN 33976 --- [MySpringBootApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T17:02:56.902+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-04-03T17:02:57.608+09:00  WARN 33976 --- [MySpringBootApp] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c3bbde53-4045-4dca-ae68-7eb77af7ab5f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-04-03T17:02:57.658+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-04-03T17:02:57.685+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@38ccf8bc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b3253b7, org.springframework.security.web.context.SecurityContextHolderFilter@364b2a9b, org.springframework.security.web.header.HeaderWriterFilter@2a90ba4f, org.springframework.web.filter.CorsFilter@4371d1e1, org.springframework.security.web.csrf.CsrfFilter@4f2dfa93, org.springframework.security.web.authentication.logout.LogoutFilter@2d892e8e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@33980681, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@266772a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@315c5cc7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2d27d953, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7df822d0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@72a2238b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e0a4b48, org.springframework.security.web.access.ExceptionTranslationFilter@7d5b65fe, org.springframework.security.web.access.intercept.AuthorizationFilter@73f35d51]
+2024-04-03T17:02:57.810+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-03T17:02:57.860+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path ''
+2024-04-03T17:02:57.870+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 3.018 seconds (process running for 493.055)
+2024-04-03T17:02:57.874+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T17:02:57.875+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T17:02:57.875+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T17:02:57.876+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T17:02:57.876+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T17:02:57.876+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T17:02:57.877+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T17:02:57.877+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 50
+2024-04-03T17:02:57.877+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T17:02:57.878+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : port 번호 8080
+2024-04-03T17:02:57.882+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   ManagementWebSecurityAutoConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   UserDetailsServiceAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+      - AnyNestedCondition 1 matched 2 did not; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.PasswordConfigured @ConditionalOnProperty (spring.security.user.password) did not find property 'password'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.NameConfigured @ConditionalOnProperty (spring.security.user.name) did not find property 'name'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.MissingAlternative @ConditionalOnMissingClass did not find unwanted classes 'org.springframework.security.oauth2.client.registration.ClientRegistrationRepository', 'org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector', 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured)
+      - @ConditionalOnBean (types: org.springframework.security.config.annotation.ObjectPostProcessor; SearchStrategy: all) found bean 'objectPostProcessor'; @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-04-03T17:02:57.907+09:00  INFO 33976 --- [MySpringBootApp] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 34fecff80a31
+2024-04-03T17:02:57.926+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-03T17:02:57.926+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-4] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-04-03T17:02:57.928+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-4] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2024-04-03T17:02:59.258+09:00  INFO 33976 --- [MySpringBootApp] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (1 addition, 0 deletions, 1 modification)
+2024-04-03T17:02:59.288+09:00  INFO 33976 --- [MySpringBootApp] [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T17:02:59.289+09:00  INFO 33976 --- [MySpringBootApp] [Thread-23] c.z.h.HikariDataSource                   : HikariPool-6 - Shutdown initiated...
+2024-04-03T17:02:59.292+09:00  INFO 33976 --- [MySpringBootApp] [Thread-23] c.z.h.HikariDataSource                   : HikariPool-6 - Shutdown completed.
+2024-04-03T17:02:59.443+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Starting MySpringBootAppApplication using Java 17 with PID 33976 (C:\KT_springboot\MySpringBootApp\target\classes started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T17:02:59.444+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : The following 1 profile is active: "prod"
+2024-04-03T17:03:00.136+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T17:03:00.153+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+2024-04-03T17:03:00.443+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2024-04-03T17:03:00.445+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-04-03T17:03:00.445+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-03T17:03:00.503+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-04-03T17:03:00.504+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1057 ms
+2024-04-03T17:03:00.637+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Starting...
+2024-04-03T17:03:00.655+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-7 - Added connection org.mariadb.jdbc.Connection@58713c64
+2024-04-03T17:03:00.656+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Start completed.
+2024-04-03T17:03:00.656+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=***'
+2024-04-03T17:03:00.827+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T17:03:00.836+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T17:03:00.853+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T17:03:00.857+09:00  WARN 33976 --- [MySpringBootApp] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T17:03:00.962+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T17:03:00.989+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T17:03:01.168+09:00  WARN 33976 --- [MySpringBootApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T17:03:01.499+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-04-03T17:03:01.813+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-04-03T17:03:01.866+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@45575bb3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65e6e545, org.springframework.security.web.context.SecurityContextHolderFilter@44fc4e86, org.springframework.security.web.header.HeaderWriterFilter@2dc2ffef, org.springframework.web.filter.CorsFilter@7af1d316, org.springframework.security.web.authentication.logout.LogoutFilter@48d8578, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5009af21, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@688d1ed, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1609dc3c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e2276b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1668501, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69fc978d, org.springframework.security.web.access.ExceptionTranslationFilter@59e7193c, org.springframework.security.web.access.intercept.AuthorizationFilter@46727386]
+2024-04-03T17:03:02.162+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-03T17:03:02.185+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path ''
+2024-04-03T17:03:02.194+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 2.818 seconds (process running for 497.379)
+2024-04-03T17:03:02.196+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T17:03:02.197+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T17:03:02.197+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T17:03:02.197+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T17:03:02.197+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T17:03:02.197+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T17:03:02.198+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T17:03:02.198+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 80
+2024-04-03T17:03:02.198+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T17:03:02.198+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : port 번호 8080
+2024-04-03T17:03:02.201+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   ManagementWebSecurityAutoConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' securityFilterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+      Matched:
+         - found 'session' scope (OnWebApplicationCondition)
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder; SearchStrategy: all) found beans of type 'org.springframework.security.core.userdetails.UserDetailsService' userDetailsService (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+         - AnyNestedCondition 1 matched 2 did not; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.PasswordConfigured @ConditionalOnProperty (spring.security.user.password) did not find property 'password'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.NameConfigured @ConditionalOnProperty (spring.security.user.name) did not find property 'name'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.MissingAlternative @ConditionalOnMissingClass did not find unwanted classes 'org.springframework.security.oauth2.client.registration.ClientRegistrationRepository', 'org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector', 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-04-03T17:03:02.214+09:00  INFO 33976 --- [MySpringBootApp] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 34fecff80a31
+2024-04-03T17:03:02.226+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-03T17:03:02.227+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-04-03T17:03:02.228+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2024-04-03T17:04:31.042+09:00  INFO 33976 --- [MySpringBootApp] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-04-03T17:04:31.072+09:00  INFO 33976 --- [MySpringBootApp] [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T17:04:31.072+09:00  INFO 33976 --- [MySpringBootApp] [Thread-27] c.z.h.HikariDataSource                   : HikariPool-7 - Shutdown initiated...
+2024-04-03T17:04:31.076+09:00  INFO 33976 --- [MySpringBootApp] [Thread-27] c.z.h.HikariDataSource                   : HikariPool-7 - Shutdown completed.
+2024-04-03T17:04:31.241+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Starting MySpringBootAppApplication using Java 17 with PID 33976 (C:\KT_springboot\MySpringBootApp\target\classes started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T17:04:31.242+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : The following 1 profile is active: "prod"
+2024-04-03T17:04:31.853+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T17:04:31.868+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2024-04-03T17:04:32.289+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2024-04-03T17:04:32.292+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-04-03T17:04:32.296+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-03T17:04:32.433+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-04-03T17:04:32.434+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1189 ms
+2024-04-03T17:04:32.591+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-8 - Starting...
+2024-04-03T17:04:32.599+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-8 - Added connection org.mariadb.jdbc.Connection@613682b6
+2024-04-03T17:04:32.600+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-8 - Start completed.
+2024-04-03T17:04:32.600+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=***'
+2024-04-03T17:04:32.783+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T17:04:32.791+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T17:04:32.800+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T17:04:32.804+09:00  WARN 33976 --- [MySpringBootApp] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T17:04:32.887+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T17:04:32.912+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T17:04:33.106+09:00  WARN 33976 --- [MySpringBootApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T17:04:33.456+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-04-03T17:04:33.847+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-04-03T17:04:33.933+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5689d4e2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7133b87c, org.springframework.security.web.context.SecurityContextHolderFilter@31eeb8f3, org.springframework.security.web.header.HeaderWriterFilter@17ddbe3, org.springframework.web.filter.CorsFilter@647d1228, org.springframework.security.web.authentication.logout.LogoutFilter@4560c976, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@46d51d7c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@21b70217, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@19baf556, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3be09401, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d12de1d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10c0c47, org.springframework.security.web.access.ExceptionTranslationFilter@7074bd54, org.springframework.security.web.access.intercept.AuthorizationFilter@7d3eff43]
+2024-04-03T17:04:34.356+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-03T17:04:34.396+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path ''
+2024-04-03T17:04:34.408+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 3.239 seconds (process running for 589.592)
+2024-04-03T17:04:34.412+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T17:04:34.413+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T17:04:34.413+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T17:04:34.414+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T17:04:34.414+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T17:04:34.414+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T17:04:34.414+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T17:04:34.415+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 78
+2024-04-03T17:04:34.415+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T17:04:34.415+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : port 번호 8080
+2024-04-03T17:04:34.419+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-03T17:04:34.452+09:00  INFO 33976 --- [MySpringBootApp] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 34fecff80a31
+2024-04-03T17:04:34.463+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-03T17:04:34.464+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-3] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-04-03T17:04:34.466+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-3] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2024-04-03T17:04:35.821+09:00  INFO 33976 --- [MySpringBootApp] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-04-03T17:04:35.855+09:00  INFO 33976 --- [MySpringBootApp] [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T17:04:35.856+09:00  INFO 33976 --- [MySpringBootApp] [Thread-31] c.z.h.HikariDataSource                   : HikariPool-8 - Shutdown initiated...
+2024-04-03T17:04:35.859+09:00  INFO 33976 --- [MySpringBootApp] [Thread-31] c.z.h.HikariDataSource                   : HikariPool-8 - Shutdown completed.
+2024-04-03T17:04:36.071+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Starting MySpringBootAppApplication using Java 17 with PID 33976 (C:\KT_springboot\MySpringBootApp\target\classes started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T17:04:36.073+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : The following 1 profile is active: "prod"
+2024-04-03T17:04:36.658+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T17:04:36.679+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 2 JPA repository interfaces.
+2024-04-03T17:04:36.991+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2024-04-03T17:04:36.993+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-04-03T17:04:36.993+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-03T17:04:37.034+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-04-03T17:04:37.035+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 958 ms
+2024-04-03T17:04:37.126+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-9 - Starting...
+2024-04-03T17:04:37.131+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-9 - Added connection org.mariadb.jdbc.Connection@5f69060a
+2024-04-03T17:04:37.132+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-9 - Start completed.
+2024-04-03T17:04:37.132+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=***'
+2024-04-03T17:04:37.220+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T17:04:37.226+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T17:04:37.235+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T17:04:37.239+09:00  WARN 33976 --- [MySpringBootApp] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T17:04:37.321+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T17:04:37.341+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T17:04:37.588+09:00  WARN 33976 --- [MySpringBootApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T17:04:37.875+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-04-03T17:04:38.072+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-04-03T17:04:38.139+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1bc0cc63, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6272928d, org.springframework.security.web.context.SecurityContextHolderFilter@33fd3463, org.springframework.security.web.header.HeaderWriterFilter@5de9ba20, org.springframework.web.filter.CorsFilter@49cdae42, org.springframework.security.web.authentication.logout.LogoutFilter@29241db0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@c270e49, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@77eb231e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5e904694, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@186822b4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5aaed7ad, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43ae3af1, org.springframework.security.web.access.ExceptionTranslationFilter@3b94654f, org.springframework.security.web.access.intercept.AuthorizationFilter@7428d174]
+2024-04-03T17:04:38.590+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-03T17:04:38.620+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path ''
+2024-04-03T17:04:38.628+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 2.666 seconds (process running for 593.813)
+2024-04-03T17:04:38.629+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T17:04:38.630+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T17:04:38.630+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T17:04:38.630+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T17:04:38.631+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T17:04:38.631+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T17:04:38.631+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T17:04:38.631+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 3
+2024-04-03T17:04:38.631+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T17:04:38.632+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : port 번호 8080
+2024-04-03T17:04:38.634+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-03T17:04:38.650+09:00  INFO 33976 --- [MySpringBootApp] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 34fecff80a31
+2024-04-03T17:04:38.661+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-03T17:04:38.661+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-04-03T17:04:38.663+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2024-04-03T17:04:48.263+09:00  INFO 33976 --- [MySpringBootApp] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-04-03T17:04:48.284+09:00  INFO 33976 --- [MySpringBootApp] [Thread-35] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T17:04:48.285+09:00  INFO 33976 --- [MySpringBootApp] [Thread-35] c.z.h.HikariDataSource                   : HikariPool-9 - Shutdown initiated...
+2024-04-03T17:04:48.287+09:00  INFO 33976 --- [MySpringBootApp] [Thread-35] c.z.h.HikariDataSource                   : HikariPool-9 - Shutdown completed.
+2024-04-03T17:04:48.405+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Starting MySpringBootAppApplication using Java 17 with PID 33976 (C:\KT_springboot\MySpringBootApp\target\classes started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T17:04:48.406+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : The following 1 profile is active: "prod"
+2024-04-03T17:04:48.731+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T17:04:48.746+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2024-04-03T17:04:48.908+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2024-04-03T17:04:48.910+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-04-03T17:04:48.910+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-03T17:04:48.947+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-04-03T17:04:48.947+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 539 ms
+2024-04-03T17:04:49.022+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-10 - Starting...
+2024-04-03T17:04:49.025+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-10 - Added connection org.mariadb.jdbc.Connection@47b0bfb1
+2024-04-03T17:04:49.026+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-10 - Start completed.
+2024-04-03T17:04:49.026+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=***'
+2024-04-03T17:04:49.091+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T17:04:49.094+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T17:04:49.099+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T17:04:49.102+09:00  WARN 33976 --- [MySpringBootApp] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T17:04:49.174+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T17:04:49.203+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T17:04:49.417+09:00  WARN 33976 --- [MySpringBootApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T17:04:49.736+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-04-03T17:04:50.017+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-04-03T17:04:50.081+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@51b80c23, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7f147435, org.springframework.security.web.context.SecurityContextHolderFilter@3262d383, org.springframework.security.web.header.HeaderWriterFilter@772f6025, org.springframework.web.filter.CorsFilter@50fca925, org.springframework.security.web.authentication.logout.LogoutFilter@5e246ee7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@96f464c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@49ff7515, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7f2f40ed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2fd12f60, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67e694cd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ee7823f, org.springframework.security.web.access.ExceptionTranslationFilter@4ea89829, org.springframework.security.web.access.intercept.AuthorizationFilter@60e4f919]
+2024-04-03T17:04:50.353+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-03T17:04:50.370+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path ''
+2024-04-03T17:04:50.375+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 2.016 seconds (process running for 605.56)
+2024-04-03T17:04:50.376+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T17:04:50.377+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T17:04:50.377+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T17:04:50.377+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T17:04:50.377+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T17:04:50.377+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T17:04:50.378+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T17:04:50.378+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 79
+2024-04-03T17:04:50.378+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T17:04:50.378+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : port 번호 8080
+2024-04-03T17:04:50.380+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-03T17:04:50.393+09:00  INFO 33976 --- [MySpringBootApp] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 34fecff80a31
+2024-04-03T17:04:50.404+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-03T17:04:50.404+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-04-03T17:04:50.406+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2024-04-03T17:04:51.798+09:00  INFO 33976 --- [MySpringBootApp] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-04-03T17:04:51.818+09:00  INFO 33976 --- [MySpringBootApp] [Thread-39] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T17:04:51.819+09:00  INFO 33976 --- [MySpringBootApp] [Thread-39] c.z.h.HikariDataSource                   : HikariPool-10 - Shutdown initiated...
+2024-04-03T17:04:51.822+09:00  INFO 33976 --- [MySpringBootApp] [Thread-39] c.z.h.HikariDataSource                   : HikariPool-10 - Shutdown completed.
+2024-04-03T17:04:51.951+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Starting MySpringBootAppApplication using Java 17 with PID 33976 (C:\KT_springboot\MySpringBootApp\target\classes started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T17:04:51.951+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : The following 1 profile is active: "prod"
+2024-04-03T17:04:52.285+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T17:04:52.300+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2024-04-03T17:04:52.476+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2024-04-03T17:04:52.477+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-04-03T17:04:52.478+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-03T17:04:52.527+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-04-03T17:04:52.527+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 574 ms
+2024-04-03T17:04:52.600+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-11 - Starting...
+2024-04-03T17:04:52.605+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-11 - Added connection org.mariadb.jdbc.Connection@37c0c2
+2024-04-03T17:04:52.605+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-11 - Start completed.
+2024-04-03T17:04:52.605+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=***'
+2024-04-03T17:04:52.691+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T17:04:52.694+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T17:04:52.700+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T17:04:52.702+09:00  WARN 33976 --- [MySpringBootApp] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T17:04:52.749+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T17:04:52.778+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T17:04:52.978+09:00  WARN 33976 --- [MySpringBootApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T17:04:53.316+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-04-03T17:04:53.540+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-04-03T17:04:53.608+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@76118a96, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29ce3426, org.springframework.security.web.context.SecurityContextHolderFilter@8bab45c, org.springframework.security.web.header.HeaderWriterFilter@74f19f2a, org.springframework.web.filter.CorsFilter@4c4ef252, org.springframework.security.web.authentication.logout.LogoutFilter@42b3f839, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@733048af, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@30898841, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7a63717c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@584728b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14bb3b04, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c019c, org.springframework.security.web.access.ExceptionTranslationFilter@336186c, org.springframework.security.web.access.intercept.AuthorizationFilter@5900f234]
+2024-04-03T17:04:53.872+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-03T17:04:53.887+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path ''
+2024-04-03T17:04:53.893+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 1.991 seconds (process running for 609.077)
+2024-04-03T17:04:53.894+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T17:04:53.895+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T17:04:53.895+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T17:04:53.895+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T17:04:53.895+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T17:04:53.895+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T17:04:53.895+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T17:04:53.896+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 45
+2024-04-03T17:04:53.896+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T17:04:53.896+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : port 번호 8080
+2024-04-03T17:04:53.898+09:00  INFO 33976 --- [MySpringBootApp] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-03T17:04:53.910+09:00  INFO 33976 --- [MySpringBootApp] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 34fecff80a31
+2024-04-03T17:04:53.925+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-03T17:04:53.926+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-04-03T17:04:53.927+09:00  INFO 33976 --- [MySpringBootApp] [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
