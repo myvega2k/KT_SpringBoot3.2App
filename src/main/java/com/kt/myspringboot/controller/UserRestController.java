@@ -6,6 +6,7 @@ import com.kt.myspringboot.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -48,4 +49,13 @@ public class UserRestController {
         existUser.setName(userDetail.getName());
         return userRepository.save(existUser);
     }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> deleteUser(@PathVariable Long id) {
+        User user = userRepository.findById(id)
+                .orElseThrow(() -> new BusinessException("User Not Found", HttpStatus.NOT_FOUND));
+        userRepository.delete(user);
+        return ResponseEntity.ok( id + " User가 삭제 되었습니다.");
+    }
+
 }
