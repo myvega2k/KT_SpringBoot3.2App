@@ -31,9 +31,11 @@ class CustomerRepositoryTest {
 //                () -> dupSave()
 //        );
 
+        //ifPresenct(Consumer) Consumer의 추상메서드 void accept(T t)
         optional.ifPresent(
-                //cust -> customerRepository.delete(cust)
-                customerRepository::delete
+                cust -> customerRepository.delete(cust)
+                //Method Reference
+                //customerRepository::delete
         );
 
         optional = customerRepository.findByCustomerId("A001");
