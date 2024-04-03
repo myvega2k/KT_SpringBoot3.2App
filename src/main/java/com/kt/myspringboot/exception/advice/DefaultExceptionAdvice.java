@@ -46,7 +46,7 @@ public class DefaultExceptionAdvice {
         return new ResponseEntity<>(result, HttpStatus.BAD_REQUEST);
     }
 
-    @ExceptionHandler(Exception.class)
+    //@ExceptionHandler(Exception.class)
     protected ResponseEntity<Object> handleException(Exception e) {
         Map<String, Object> result = new HashMap<String, Object>();
         ResponseEntity<Object> ret = null;
