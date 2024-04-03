@@ -3232,3 +3232,474 @@ org.springframework.transaction.UnexpectedRollbackException: Transaction silentl
 2024-04-03T11:43:16.556+09:00  WARN 29896 --- [MySpringBootApp] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
 2024-04-03T11:43:17.589+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 2024-04-03T11:43:17.658+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T11:43:18.364+09:00  WARN 29896 --- [MySpringBootApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T11:43:19.061+09:00  WARN 29896 --- [MySpringBootApp] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-03T11:43:19.840+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-03T11:43:19.858+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-03T11:43:20.020+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8087 (http) with context path ''
+2024-04-03T11:43:20.051+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 7.693 seconds (process running for 8.522)
+2024-04-03T11:43:20.068+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T11:43:20.070+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T11:43:20.071+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T11:43:20.072+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T11:43:20.073+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T11:43:20.073+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T11:43:20.074+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T11:43:20.075+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 3
+2024-04-03T11:43:20.076+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T11:43:20.077+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : port 번호 8087
+2024-04-03T11:44:52.456+09:00  INFO 29896 --- [MySpringBootApp] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-04-03T11:44:52.488+09:00  INFO 29896 --- [MySpringBootApp] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T11:44:52.492+09:00  INFO 29896 --- [MySpringBootApp] [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-04-03T11:44:52.497+09:00  INFO 29896 --- [MySpringBootApp] [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-04-03T11:44:52.661+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Starting MySpringBootAppApplication using Java 17 with PID 29896 (C:\KT_springboot\MySpringBootApp\target\classes started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T11:44:52.662+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : The following 1 profile is active: "prod"
+2024-04-03T11:44:53.234+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T11:44:53.255+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 2 JPA repository interfaces.
+2024-04-03T11:44:53.566+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8087 (http)
+2024-04-03T11:44:53.568+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-04-03T11:44:53.569+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-03T11:44:53.630+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-04-03T11:44:53.631+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 965 ms
+2024-04-03T11:44:53.733+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2024-04-03T11:44:53.739+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-2 - Added connection org.mariadb.jdbc.Connection@f6bc464
+2024-04-03T11:44:53.740+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2024-04-03T11:44:53.741+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=***'
+2024-04-03T11:44:53.854+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T11:44:53.862+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T11:44:53.874+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T11:44:53.878+09:00  WARN 29896 --- [MySpringBootApp] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T11:44:53.985+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T11:44:54.012+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T11:44:54.275+09:00  WARN 29896 --- [MySpringBootApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T11:44:54.639+09:00  WARN 29896 --- [MySpringBootApp] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-03T11:44:55.236+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-03T11:44:55.253+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-03T11:44:55.299+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8087 (http) with context path ''
+2024-04-03T11:44:55.314+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 2.745 seconds (process running for 103.785)
+2024-04-03T11:44:55.317+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T11:44:55.319+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T11:44:55.319+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T11:44:55.320+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T11:44:55.320+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T11:44:55.321+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T11:44:55.322+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T11:44:55.322+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 3
+2024-04-03T11:44:55.323+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T11:44:55.323+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : port 번호 8087
+2024-04-03T11:44:55.330+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-03T11:44:56.676+09:00  INFO 29896 --- [MySpringBootApp] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-04-03T11:44:56.698+09:00  INFO 29896 --- [MySpringBootApp] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T11:44:56.700+09:00  INFO 29896 --- [MySpringBootApp] [Thread-7] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown initiated...
+2024-04-03T11:44:56.705+09:00  INFO 29896 --- [MySpringBootApp] [Thread-7] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown completed.
+2024-04-03T11:44:56.849+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Starting MySpringBootAppApplication using Java 17 with PID 29896 (C:\KT_springboot\MySpringBootApp\target\classes started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T11:44:56.850+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : The following 1 profile is active: "prod"
+2024-04-03T11:44:57.375+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T11:44:57.414+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
+2024-04-03T11:44:57.795+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8087 (http)
+2024-04-03T11:44:57.812+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-04-03T11:44:57.813+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-03T11:44:57.894+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-04-03T11:44:57.895+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1042 ms
+2024-04-03T11:44:58.072+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Starting...
+2024-04-03T11:44:58.087+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-3 - Added connection org.mariadb.jdbc.Connection@6773bfcd
+2024-04-03T11:44:58.088+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Start completed.
+2024-04-03T11:44:58.089+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=***'
+2024-04-03T11:44:58.237+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T11:44:58.242+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T11:44:58.252+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T11:44:58.258+09:00  WARN 29896 --- [MySpringBootApp] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T11:44:58.437+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T11:44:58.463+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T11:44:58.669+09:00  WARN 29896 --- [MySpringBootApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T11:44:58.887+09:00  WARN 29896 --- [MySpringBootApp] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-03T11:44:59.164+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-03T11:44:59.171+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-03T11:44:59.198+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8087 (http) with context path ''
+2024-04-03T11:44:59.219+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 2.431 seconds (process running for 107.69)
+2024-04-03T11:44:59.220+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T11:44:59.221+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T11:44:59.222+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T11:44:59.222+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T11:44:59.222+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T11:44:59.222+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T11:44:59.223+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T11:44:59.223+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 38
+2024-04-03T11:44:59.223+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T11:44:59.224+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] c.k.m.r.MyRunner                         : port 번호 8087
+2024-04-03T11:44:59.227+09:00  INFO 29896 --- [MySpringBootApp] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-03T11:47:45.511+09:00  INFO 29896 --- [MySpringBootApp] [http-nio-8087-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-03T11:47:45.512+09:00  INFO 29896 --- [MySpringBootApp] [http-nio-8087-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-04-03T11:47:45.515+09:00  INFO 29896 --- [MySpringBootApp] [http-nio-8087-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2024-04-03T12:31:42.822+09:00  INFO 28604 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Starting CustomerRepositoryTest using Java 17 with PID 28604 (started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T12:31:42.849+09:00  INFO 28604 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : The following 1 profile is active: "prod"
+2024-04-03T12:31:44.827+09:00  INFO 28604 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T12:31:44.939+09:00  INFO 28604 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 2 JPA repository interfaces.
+2024-04-03T12:31:46.298+09:00  INFO 28604 --- [MySpringBootApp] [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T12:31:46.496+09:00  INFO 28604 --- [MySpringBootApp] [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-03T12:31:46.587+09:00  INFO 28604 --- [MySpringBootApp] [main] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T12:31:47.157+09:00  INFO 28604 --- [MySpringBootApp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T12:31:47.207+09:00  INFO 28604 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-04-03T12:31:47.377+09:00  INFO 28604 --- [MySpringBootApp] [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@396f2724
+2024-04-03T12:31:47.381+09:00  INFO 28604 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-04-03T12:31:47.430+09:00  WARN 28604 --- [MySpringBootApp] [main] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T12:31:48.644+09:00  INFO 28604 --- [MySpringBootApp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T12:31:48.716+09:00  INFO 28604 --- [MySpringBootApp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T12:31:49.780+09:00  WARN 28604 --- [MySpringBootApp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T12:31:50.537+09:00  WARN 28604 --- [MySpringBootApp] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-03T12:31:51.430+09:00  INFO 28604 --- [MySpringBootApp] [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-03T12:31:51.575+09:00  INFO 28604 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Started CustomerRepositoryTest in 9.448 seconds (process running for 12.41)
+2024-04-03T12:31:51.588+09:00  INFO 28604 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T12:31:51.589+09:00  INFO 28604 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T12:31:51.589+09:00  INFO 28604 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T12:31:51.590+09:00  INFO 28604 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T12:31:51.591+09:00  INFO 28604 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T12:31:51.591+09:00  INFO 28604 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T12:31:51.592+09:00  INFO 28604 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T12:31:51.592+09:00  INFO 28604 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 3
+2024-04-03T12:31:51.593+09:00  INFO 28604 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T12:31:51.593+09:00  INFO 28604 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : port 번호 null
+2024-04-03T12:31:52.819+09:00  INFO 28604 --- [MySpringBootApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T12:31:52.823+09:00  INFO 28604 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-04-03T12:31:52.830+09:00  INFO 28604 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-04-03T12:32:16.984+09:00  INFO 18284 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Starting CustomerRepositoryTest using Java 17 with PID 18284 (started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T12:32:17.003+09:00  INFO 18284 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : The following 1 profile is active: "prod"
+2024-04-03T12:32:19.195+09:00  INFO 18284 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T12:32:19.356+09:00  INFO 18284 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 140 ms. Found 2 JPA repository interfaces.
+2024-04-03T12:32:21.034+09:00  INFO 18284 --- [MySpringBootApp] [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T12:32:21.212+09:00  INFO 18284 --- [MySpringBootApp] [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-03T12:32:21.330+09:00  INFO 18284 --- [MySpringBootApp] [main] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T12:32:21.928+09:00  INFO 18284 --- [MySpringBootApp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T12:32:22.002+09:00  INFO 18284 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-04-03T12:32:22.197+09:00  INFO 18284 --- [MySpringBootApp] [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@3dad535f
+2024-04-03T12:32:22.200+09:00  INFO 18284 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-04-03T12:32:22.246+09:00  WARN 18284 --- [MySpringBootApp] [main] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T12:32:23.674+09:00  INFO 18284 --- [MySpringBootApp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T12:32:23.742+09:00  INFO 18284 --- [MySpringBootApp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T12:32:24.884+09:00  WARN 18284 --- [MySpringBootApp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T12:32:25.728+09:00  WARN 18284 --- [MySpringBootApp] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-03T12:32:26.636+09:00  INFO 18284 --- [MySpringBootApp] [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-03T12:32:26.795+09:00  INFO 18284 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Started CustomerRepositoryTest in 10.557 seconds (process running for 13.051)
+2024-04-03T12:32:26.811+09:00  INFO 18284 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T12:32:26.815+09:00  INFO 18284 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T12:32:26.816+09:00  INFO 18284 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T12:32:26.817+09:00  INFO 18284 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T12:32:26.817+09:00  INFO 18284 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T12:32:26.818+09:00  INFO 18284 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T12:32:26.818+09:00  INFO 18284 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T12:32:26.819+09:00  INFO 18284 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 11
+2024-04-03T12:32:26.820+09:00  INFO 18284 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T12:32:26.820+09:00  INFO 18284 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : port 번호 null
+2024-04-03T12:32:28.682+09:00  INFO 18284 --- [MySpringBootApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T12:32:28.693+09:00  INFO 18284 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-04-03T12:32:28.720+09:00  INFO 18284 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-04-03T12:33:31.732+09:00  INFO 27928 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Starting CustomerRepositoryTest using Java 17 with PID 27928 (started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T12:33:31.749+09:00  INFO 27928 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : The following 1 profile is active: "prod"
+2024-04-03T12:33:33.998+09:00  INFO 27928 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T12:33:34.138+09:00  INFO 27928 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116 ms. Found 2 JPA repository interfaces.
+2024-04-03T12:33:35.624+09:00  INFO 27928 --- [MySpringBootApp] [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T12:33:35.845+09:00  INFO 27928 --- [MySpringBootApp] [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-03T12:33:35.958+09:00  INFO 27928 --- [MySpringBootApp] [main] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T12:33:36.508+09:00  INFO 27928 --- [MySpringBootApp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T12:33:36.600+09:00  INFO 27928 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-04-03T12:33:36.788+09:00  INFO 27928 --- [MySpringBootApp] [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@199806aa
+2024-04-03T12:33:36.790+09:00  INFO 27928 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-04-03T12:33:36.829+09:00  WARN 27928 --- [MySpringBootApp] [main] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T12:33:38.130+09:00  INFO 27928 --- [MySpringBootApp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T12:33:38.200+09:00  INFO 27928 --- [MySpringBootApp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T12:33:39.409+09:00  WARN 27928 --- [MySpringBootApp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T12:33:40.138+09:00  WARN 27928 --- [MySpringBootApp] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-03T12:33:41.011+09:00  INFO 27928 --- [MySpringBootApp] [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-03T12:33:41.150+09:00  INFO 27928 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Started CustomerRepositoryTest in 10.007 seconds (process running for 12.402)
+2024-04-03T12:33:41.162+09:00  INFO 27928 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T12:33:41.163+09:00  INFO 27928 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T12:33:41.164+09:00  INFO 27928 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T12:33:41.165+09:00  INFO 27928 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T12:33:41.166+09:00  INFO 27928 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T12:33:41.166+09:00  INFO 27928 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T12:33:41.168+09:00  INFO 27928 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T12:33:41.168+09:00  INFO 27928 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 97
+2024-04-03T12:33:41.169+09:00  INFO 27928 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T12:33:41.170+09:00  INFO 27928 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : port 번호 null
+2024-04-03T12:33:42.409+09:00  INFO 27928 --- [MySpringBootApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T12:33:42.414+09:00  INFO 27928 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-04-03T12:33:42.426+09:00  INFO 27928 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-04-03T12:39:43.770+09:00  INFO 24844 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Starting CustomerRepositoryTest using Java 17 with PID 24844 (started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T12:39:43.782+09:00  INFO 24844 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : The following 1 profile is active: "prod"
+2024-04-03T12:39:45.667+09:00  INFO 24844 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T12:39:45.775+09:00  INFO 24844 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 2 JPA repository interfaces.
+2024-04-03T12:39:46.946+09:00  INFO 24844 --- [MySpringBootApp] [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T12:39:47.087+09:00  INFO 24844 --- [MySpringBootApp] [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-03T12:39:47.165+09:00  INFO 24844 --- [MySpringBootApp] [main] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T12:39:47.704+09:00  INFO 24844 --- [MySpringBootApp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T12:39:47.767+09:00  INFO 24844 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-04-03T12:39:47.992+09:00  INFO 24844 --- [MySpringBootApp] [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@24e1e90a
+2024-04-03T12:39:47.995+09:00  INFO 24844 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-04-03T12:39:48.050+09:00  WARN 24844 --- [MySpringBootApp] [main] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T12:39:49.464+09:00  INFO 24844 --- [MySpringBootApp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T12:39:49.559+09:00  INFO 24844 --- [MySpringBootApp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T12:39:50.977+09:00  WARN 24844 --- [MySpringBootApp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T12:39:51.946+09:00  WARN 24844 --- [MySpringBootApp] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-03T12:39:53.022+09:00  INFO 24844 --- [MySpringBootApp] [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-03T12:39:53.194+09:00  INFO 24844 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Started CustomerRepositoryTest in 9.981 seconds (process running for 12.423)
+2024-04-03T12:39:53.210+09:00  INFO 24844 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T12:39:53.212+09:00  INFO 24844 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T12:39:53.213+09:00  INFO 24844 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T12:39:53.214+09:00  INFO 24844 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T12:39:53.215+09:00  INFO 24844 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T12:39:53.215+09:00  INFO 24844 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T12:39:53.216+09:00  INFO 24844 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T12:39:53.217+09:00  INFO 24844 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 27
+2024-04-03T12:39:53.217+09:00  INFO 24844 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T12:39:53.218+09:00  INFO 24844 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : port 번호 null
+2024-04-03T12:39:54.652+09:00  INFO 24844 --- [MySpringBootApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T12:39:54.655+09:00  INFO 24844 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-04-03T12:39:54.664+09:00  INFO 24844 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-04-03T12:40:55.576+09:00  INFO 24236 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Starting CustomerRepositoryTest using Java 17 with PID 24236 (started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T12:40:55.600+09:00  INFO 24236 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : The following 1 profile is active: "prod"
+2024-04-03T12:40:57.778+09:00  INFO 24236 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T12:40:57.905+09:00  INFO 24236 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 2 JPA repository interfaces.
+2024-04-03T12:40:59.473+09:00  INFO 24236 --- [MySpringBootApp] [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T12:40:59.628+09:00  INFO 24236 --- [MySpringBootApp] [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-03T12:40:59.712+09:00  INFO 24236 --- [MySpringBootApp] [main] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T12:41:00.210+09:00  INFO 24236 --- [MySpringBootApp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T12:41:00.275+09:00  INFO 24236 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-04-03T12:41:00.438+09:00  INFO 24236 --- [MySpringBootApp] [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@4c28f97e
+2024-04-03T12:41:00.447+09:00  INFO 24236 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-04-03T12:41:00.489+09:00  WARN 24236 --- [MySpringBootApp] [main] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T12:41:01.720+09:00  INFO 24236 --- [MySpringBootApp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T12:41:01.797+09:00  INFO 24236 --- [MySpringBootApp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T12:41:02.881+09:00  WARN 24236 --- [MySpringBootApp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T12:41:03.570+09:00  WARN 24236 --- [MySpringBootApp] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-03T12:41:04.446+09:00  INFO 24236 --- [MySpringBootApp] [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-03T12:41:04.611+09:00  INFO 24236 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Started CustomerRepositoryTest in 9.821 seconds (process running for 13.03)
+2024-04-03T12:41:04.628+09:00  INFO 24236 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T12:41:04.629+09:00  INFO 24236 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T12:41:04.630+09:00  INFO 24236 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T12:41:04.632+09:00  INFO 24236 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T12:41:04.633+09:00  INFO 24236 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T12:41:04.633+09:00  INFO 24236 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T12:41:04.634+09:00  INFO 24236 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T12:41:04.635+09:00  INFO 24236 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 75
+2024-04-03T12:41:04.636+09:00  INFO 24236 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T12:41:04.637+09:00  INFO 24236 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : port 번호 null
+2024-04-03T12:41:05.861+09:00  INFO 24236 --- [MySpringBootApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T12:41:05.866+09:00  INFO 24236 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-04-03T12:41:05.877+09:00  INFO 24236 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-04-03T12:43:00.797+09:00  INFO 31528 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Starting CustomerRepositoryTest using Java 17 with PID 31528 (started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T12:43:00.815+09:00  INFO 31528 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : The following 1 profile is active: "prod"
+2024-04-03T12:43:02.711+09:00  INFO 31528 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T12:43:02.815+09:00  INFO 31528 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 2 JPA repository interfaces.
+2024-04-03T12:43:04.121+09:00  INFO 31528 --- [MySpringBootApp] [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T12:43:04.327+09:00  INFO 31528 --- [MySpringBootApp] [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-03T12:43:04.436+09:00  INFO 31528 --- [MySpringBootApp] [main] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T12:43:05.093+09:00  INFO 31528 --- [MySpringBootApp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T12:43:05.181+09:00  INFO 31528 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-04-03T12:43:05.369+09:00  INFO 31528 --- [MySpringBootApp] [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@3dad535f
+2024-04-03T12:43:05.373+09:00  INFO 31528 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-04-03T12:43:05.428+09:00  WARN 31528 --- [MySpringBootApp] [main] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T12:43:06.785+09:00  INFO 31528 --- [MySpringBootApp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T12:43:06.854+09:00  INFO 31528 --- [MySpringBootApp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T12:43:08.086+09:00  WARN 31528 --- [MySpringBootApp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T12:43:08.876+09:00  WARN 31528 --- [MySpringBootApp] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-03T12:43:09.753+09:00  INFO 31528 --- [MySpringBootApp] [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-03T12:43:09.885+09:00  INFO 31528 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Started CustomerRepositoryTest in 9.704 seconds (process running for 12.377)
+2024-04-03T12:43:09.897+09:00  INFO 31528 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T12:43:09.898+09:00  INFO 31528 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T12:43:09.898+09:00  INFO 31528 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T12:43:09.899+09:00  INFO 31528 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T12:43:09.900+09:00  INFO 31528 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T12:43:09.900+09:00  INFO 31528 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T12:43:09.900+09:00  INFO 31528 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T12:43:09.901+09:00  INFO 31528 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 44
+2024-04-03T12:43:09.901+09:00  INFO 31528 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T12:43:09.902+09:00  INFO 31528 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : port 번호 null
+2024-04-03T12:43:11.231+09:00  INFO 31528 --- [MySpringBootApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T12:43:11.234+09:00  INFO 31528 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-04-03T12:43:11.239+09:00  INFO 31528 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-04-03T12:43:48.233+09:00  INFO 26036 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Starting CustomerRepositoryTest using Java 17 with PID 26036 (started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T12:43:48.256+09:00  INFO 26036 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : The following 1 profile is active: "prod"
+2024-04-03T12:43:50.508+09:00  INFO 26036 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T12:43:50.648+09:00  INFO 26036 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 112 ms. Found 2 JPA repository interfaces.
+2024-04-03T12:43:52.407+09:00  INFO 26036 --- [MySpringBootApp] [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T12:43:52.552+09:00  INFO 26036 --- [MySpringBootApp] [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-03T12:43:52.656+09:00  INFO 26036 --- [MySpringBootApp] [main] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T12:43:53.184+09:00  INFO 26036 --- [MySpringBootApp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T12:43:53.245+09:00  INFO 26036 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-04-03T12:43:53.433+09:00  INFO 26036 --- [MySpringBootApp] [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@4331be30
+2024-04-03T12:43:53.437+09:00  INFO 26036 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-04-03T12:43:53.489+09:00  WARN 26036 --- [MySpringBootApp] [main] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T12:43:55.004+09:00  INFO 26036 --- [MySpringBootApp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T12:43:55.079+09:00  INFO 26036 --- [MySpringBootApp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T12:43:56.642+09:00  WARN 26036 --- [MySpringBootApp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T12:43:57.561+09:00  WARN 26036 --- [MySpringBootApp] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-03T12:43:58.581+09:00  INFO 26036 --- [MySpringBootApp] [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-03T12:43:58.736+09:00  INFO 26036 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Started CustomerRepositoryTest in 11.108 seconds (process running for 13.458)
+2024-04-03T12:43:58.752+09:00  INFO 26036 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T12:43:58.754+09:00  INFO 26036 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T12:43:58.754+09:00  INFO 26036 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T12:43:58.756+09:00  INFO 26036 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T12:43:58.757+09:00  INFO 26036 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T12:43:58.757+09:00  INFO 26036 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T12:43:58.758+09:00  INFO 26036 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T12:43:58.758+09:00  INFO 26036 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 49
+2024-04-03T12:43:58.759+09:00  INFO 26036 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T12:43:58.760+09:00  INFO 26036 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : port 번호 null
+2024-04-03T12:43:59.933+09:00  INFO 26036 --- [MySpringBootApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T12:43:59.938+09:00  INFO 26036 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-04-03T12:43:59.950+09:00  INFO 26036 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-04-03T12:47:39.012+09:00  INFO 29216 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Starting CustomerRepositoryTest using Java 17 with PID 29216 (started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T12:47:39.031+09:00  INFO 29216 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : The following 1 profile is active: "prod"
+2024-04-03T12:47:41.200+09:00  INFO 29216 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T12:47:41.320+09:00  INFO 29216 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 2 JPA repository interfaces.
+2024-04-03T12:47:42.572+09:00  INFO 29216 --- [MySpringBootApp] [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T12:47:42.747+09:00  INFO 29216 --- [MySpringBootApp] [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-03T12:47:42.837+09:00  INFO 29216 --- [MySpringBootApp] [main] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T12:47:43.372+09:00  INFO 29216 --- [MySpringBootApp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T12:47:43.445+09:00  INFO 29216 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-04-03T12:47:43.610+09:00  INFO 29216 --- [MySpringBootApp] [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@24e1e90a
+2024-04-03T12:47:43.613+09:00  INFO 29216 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-04-03T12:47:43.658+09:00  WARN 29216 --- [MySpringBootApp] [main] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T12:47:44.911+09:00  INFO 29216 --- [MySpringBootApp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T12:47:44.981+09:00  INFO 29216 --- [MySpringBootApp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T12:47:46.042+09:00  WARN 29216 --- [MySpringBootApp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T12:47:46.734+09:00  WARN 29216 --- [MySpringBootApp] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-03T12:47:47.623+09:00  INFO 29216 --- [MySpringBootApp] [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-03T12:47:47.818+09:00  INFO 29216 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Started CustomerRepositoryTest in 9.637 seconds (process running for 12.176)
+2024-04-03T12:47:47.842+09:00  INFO 29216 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T12:47:47.844+09:00  INFO 29216 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T12:47:47.844+09:00  INFO 29216 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T12:47:47.846+09:00  INFO 29216 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T12:47:47.846+09:00  INFO 29216 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T12:47:47.847+09:00  INFO 29216 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T12:47:47.848+09:00  INFO 29216 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T12:47:47.849+09:00  INFO 29216 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 84
+2024-04-03T12:47:47.851+09:00  INFO 29216 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T12:47:47.852+09:00  INFO 29216 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : port 번호 null
+2024-04-03T12:47:49.291+09:00  INFO 29216 --- [MySpringBootApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T12:47:49.295+09:00  INFO 29216 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-04-03T12:47:49.302+09:00  INFO 29216 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-04-03T12:49:48.033+09:00  INFO 30764 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Starting CustomerRepositoryTest using Java 17 with PID 30764 (started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T12:49:48.049+09:00  INFO 30764 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : The following 1 profile is active: "prod"
+2024-04-03T12:49:50.180+09:00  INFO 30764 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T12:49:50.290+09:00  INFO 30764 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 2 JPA repository interfaces.
+2024-04-03T12:49:51.881+09:00  INFO 30764 --- [MySpringBootApp] [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T12:49:52.043+09:00  INFO 30764 --- [MySpringBootApp] [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-03T12:49:52.164+09:00  INFO 30764 --- [MySpringBootApp] [main] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T12:49:52.924+09:00  INFO 30764 --- [MySpringBootApp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T12:49:53.015+09:00  INFO 30764 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-04-03T12:49:53.208+09:00  INFO 30764 --- [MySpringBootApp] [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@4331be30
+2024-04-03T12:49:53.211+09:00  INFO 30764 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-04-03T12:49:53.261+09:00  WARN 30764 --- [MySpringBootApp] [main] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T12:49:54.892+09:00  INFO 30764 --- [MySpringBootApp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T12:49:54.979+09:00  INFO 30764 --- [MySpringBootApp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T12:49:56.181+09:00  WARN 30764 --- [MySpringBootApp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T12:49:57.030+09:00  WARN 30764 --- [MySpringBootApp] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-03T12:49:57.961+09:00  INFO 30764 --- [MySpringBootApp] [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-03T12:49:58.114+09:00  INFO 30764 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Started CustomerRepositoryTest in 10.684 seconds (process running for 13.236)
+2024-04-03T12:49:58.130+09:00  INFO 30764 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T12:49:58.132+09:00  INFO 30764 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T12:49:58.132+09:00  INFO 30764 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T12:49:58.134+09:00  INFO 30764 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T12:49:58.134+09:00  INFO 30764 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T12:49:58.135+09:00  INFO 30764 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T12:49:58.136+09:00  INFO 30764 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T12:49:58.136+09:00  INFO 30764 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 70
+2024-04-03T12:49:58.137+09:00  INFO 30764 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T12:49:58.138+09:00  INFO 30764 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : port 번호 null
+2024-04-03T12:49:59.429+09:00  INFO 30764 --- [MySpringBootApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T12:49:59.434+09:00  INFO 30764 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-04-03T12:49:59.439+09:00  INFO 30764 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-04-03T12:51:22.343+09:00  INFO 25056 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Starting CustomerRepositoryTest using Java 17 with PID 25056 (started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T12:51:22.361+09:00  INFO 25056 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : The following 1 profile is active: "prod"
+2024-04-03T12:51:24.421+09:00  INFO 25056 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T12:51:24.548+09:00  INFO 25056 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109 ms. Found 2 JPA repository interfaces.
+2024-04-03T12:51:25.933+09:00  INFO 25056 --- [MySpringBootApp] [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T12:51:26.079+09:00  INFO 25056 --- [MySpringBootApp] [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-03T12:51:26.162+09:00  INFO 25056 --- [MySpringBootApp] [main] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T12:51:26.787+09:00  INFO 25056 --- [MySpringBootApp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T12:51:26.857+09:00  INFO 25056 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-04-03T12:51:27.073+09:00  INFO 25056 --- [MySpringBootApp] [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@69a76b74
+2024-04-03T12:51:27.076+09:00  INFO 25056 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-04-03T12:51:27.121+09:00  WARN 25056 --- [MySpringBootApp] [main] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T12:51:28.575+09:00  INFO 25056 --- [MySpringBootApp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T12:51:28.648+09:00  INFO 25056 --- [MySpringBootApp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T12:51:29.796+09:00  WARN 25056 --- [MySpringBootApp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T12:51:30.601+09:00  WARN 25056 --- [MySpringBootApp] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-03T12:51:31.408+09:00  INFO 25056 --- [MySpringBootApp] [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-03T12:51:31.527+09:00  INFO 25056 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Started CustomerRepositoryTest in 9.892 seconds (process running for 12.431)
+2024-04-03T12:51:31.538+09:00  INFO 25056 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T12:51:31.539+09:00  INFO 25056 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T12:51:31.540+09:00  INFO 25056 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T12:51:31.541+09:00  INFO 25056 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T12:51:31.541+09:00  INFO 25056 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T12:51:31.542+09:00  INFO 25056 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T12:51:31.542+09:00  INFO 25056 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T12:51:31.543+09:00  INFO 25056 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 49
+2024-04-03T12:51:31.544+09:00  INFO 25056 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T12:51:31.544+09:00  INFO 25056 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : port 번호 null
+2024-04-03T12:51:32.650+09:00  INFO 25056 --- [MySpringBootApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T12:51:32.653+09:00  INFO 25056 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-04-03T12:51:32.659+09:00  INFO 25056 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-04-03T12:52:18.212+09:00  INFO 25216 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Starting CustomerRepositoryTest using Java 17 with PID 25216 (started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T12:52:18.228+09:00  INFO 25216 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : The following 1 profile is active: "prod"
+2024-04-03T12:52:20.336+09:00  INFO 25216 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T12:52:20.474+09:00  INFO 25216 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117 ms. Found 2 JPA repository interfaces.
+2024-04-03T12:52:21.902+09:00  INFO 25216 --- [MySpringBootApp] [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T12:52:22.067+09:00  INFO 25216 --- [MySpringBootApp] [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-03T12:52:22.176+09:00  INFO 25216 --- [MySpringBootApp] [main] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T12:52:22.815+09:00  INFO 25216 --- [MySpringBootApp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T12:52:22.869+09:00  INFO 25216 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-04-03T12:52:23.050+09:00  INFO 25216 --- [MySpringBootApp] [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@300aa927
+2024-04-03T12:52:23.053+09:00  INFO 25216 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-04-03T12:52:23.100+09:00  WARN 25216 --- [MySpringBootApp] [main] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T12:52:24.650+09:00  INFO 25216 --- [MySpringBootApp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T12:52:24.734+09:00  INFO 25216 --- [MySpringBootApp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T12:52:25.948+09:00  WARN 25216 --- [MySpringBootApp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T12:52:26.817+09:00  WARN 25216 --- [MySpringBootApp] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-03T12:52:27.806+09:00  INFO 25216 --- [MySpringBootApp] [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-03T12:52:27.949+09:00  INFO 25216 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Started CustomerRepositoryTest in 10.371 seconds (process running for 13.341)
+2024-04-03T12:52:27.965+09:00  INFO 25216 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T12:52:27.967+09:00  INFO 25216 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T12:52:27.968+09:00  INFO 25216 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T12:52:27.969+09:00  INFO 25216 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T12:52:27.969+09:00  INFO 25216 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T12:52:27.970+09:00  INFO 25216 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T12:52:27.970+09:00  INFO 25216 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T12:52:27.971+09:00  INFO 25216 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 11
+2024-04-03T12:52:27.971+09:00  INFO 25216 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T12:52:27.972+09:00  INFO 25216 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : port 번호 null
+2024-04-03T12:52:29.340+09:00  INFO 25216 --- [MySpringBootApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T12:52:29.345+09:00  INFO 25216 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-04-03T12:52:29.364+09:00  INFO 25216 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-04-03T12:53:26.923+09:00  INFO 12280 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Starting CustomerRepositoryTest using Java 17 with PID 12280 (started by vega2 in C:\KT_springboot\MySpringBootApp)
+2024-04-03T12:53:26.941+09:00  INFO 12280 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : The following 1 profile is active: "prod"
+2024-04-03T12:53:28.914+09:00  INFO 12280 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T12:53:29.033+09:00  INFO 12280 --- [MySpringBootApp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 2 JPA repository interfaces.
+2024-04-03T12:53:30.423+09:00  INFO 12280 --- [MySpringBootApp] [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T12:53:30.592+09:00  INFO 12280 --- [MySpringBootApp] [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-03T12:53:30.690+09:00  INFO 12280 --- [MySpringBootApp] [main] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-04-03T12:53:31.256+09:00  INFO 12280 --- [MySpringBootApp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T12:53:31.313+09:00  INFO 12280 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-04-03T12:53:31.486+09:00  INFO 12280 --- [MySpringBootApp] [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@20a946d9
+2024-04-03T12:53:31.488+09:00  INFO 12280 --- [MySpringBootApp] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-04-03T12:53:31.535+09:00  WARN 12280 --- [MySpringBootApp] [main] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T12:53:32.827+09:00  INFO 12280 --- [MySpringBootApp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T12:53:32.908+09:00  INFO 12280 --- [MySpringBootApp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T12:53:34.018+09:00  WARN 12280 --- [MySpringBootApp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T12:53:34.780+09:00  WARN 12280 --- [MySpringBootApp] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-03T12:53:35.716+09:00  INFO 12280 --- [MySpringBootApp] [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-03T12:53:35.840+09:00  INFO 12280 --- [MySpringBootApp] [main] c.k.m.r.CustomerRepositoryTest           : Started CustomerRepositoryTest in 9.605 seconds (process running for 12.287)
+2024-04-03T12:53:35.854+09:00  INFO 12280 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DataSource 구현객체는 ?? com.zaxxer.hikari.HikariDataSource
+2024-04-03T12:53:35.855+09:00  INFO 12280 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1:3307/boot_db?user=boot&password=*** 
+2024-04-03T12:53:35.855+09:00  INFO 12280 --- [MySpringBootApp] [main] c.k.m.r.DatabaseRunner                   : DB Username = boot
+2024-04-03T12:53:35.856+09:00  INFO 12280 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger
+2024-04-03T12:53:35.856+09:00  INFO 12280 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : 현재의 Mode  = Production 환경 prod
+2024-04-03T12:53:35.857+09:00  INFO 12280 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : MybootProperties fullName = Spring 운영환경 Boot
+2024-04-03T12:53:35.858+09:00  INFO 12280 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.name 환경변수 = Spring 운영환경
+2024-04-03T12:53:35.858+09:00  INFO 12280 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.age 환경변수 = 35
+2024-04-03T12:53:35.859+09:00  INFO 12280 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : myboot.fullName 환경변수 Spring 운영환경 Boot
+2024-04-03T12:53:35.859+09:00  INFO 12280 --- [MySpringBootApp] [main] c.k.m.r.MyRunner                         : port 번호 null
+2024-04-03T12:53:37.064+09:00  INFO 12280 --- [MySpringBootApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T12:53:37.067+09:00  INFO 12280 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-04-03T12:53:37.074+09:00  INFO 12280 --- [MySpringBootApp] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.

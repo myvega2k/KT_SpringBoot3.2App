@@ -25,28 +25,35 @@ class CustomerRepositoryTest {
         //void ifPresentOrElse(Consumer<? super T> action, Runnable emptyAction)
         //Consumer의 추상메서드 void accept(T t)
         //Ruunable의 추상메서드 void run()
-        optional.ifPresentOrElse(
-                cust -> customerRepository.delete(cust),
-                //customerRepository::delete,
-                () -> dupSave()
+//        optional.ifPresentOrElse(
+//                //cust -> customerRepository.delete(cust),
+//                customerRepository::delete,
+//                () -> dupSave()
+//        );
+
+        optional.ifPresent(
+                //cust -> customerRepository.delete(cust)
+                customerRepository::delete
         );
 
+        optional = customerRepository.findByCustomerId("A001");
+        if(optional.isEmpty()){
+            dupCheckAfterSave();
+        }
     }
 
-    private void dupSave() {
+    private void dupCheckAfterSave() {
         Customer customer = new Customer();
         customer.setCustomerId("A001");
         customer.setCustomerName("스프링");
 
-        customerRepository.save(customer);
-        Optional<Customer> optional2 = customerRepository.findByCustomerId("A001");
-        if(optional2.isPresent()){
-            System.out.println(optional2.get().getCustomerName());
-        }
+        Customer addCustomer = customerRepository.save(customer);
+        assertThat(addCustomer).isNotNull();
+        assertThat(addCustomer.getCustomerName()).isEqualTo("스프링");
     }
 
     @Test
-    @Rollback(value = true)
+    @Rollback(value = false)
     public void customer() throws Exception {
         //등록
         Customer customer = new Customer();
