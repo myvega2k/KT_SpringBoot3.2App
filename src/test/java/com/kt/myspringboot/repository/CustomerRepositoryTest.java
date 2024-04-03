@@ -33,6 +33,8 @@ class CustomerRepositoryTest {
                 () -> customerRepository.save(customer)
         );
 
+        System.out.println(customerRepository.findByCustomerId("A001").get().getCustomerName());
+
     }
 
     @Test
